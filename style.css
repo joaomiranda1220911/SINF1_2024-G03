@@ -135,6 +135,25 @@ nav{
     font-weight: 500;
 }
 
+.menu-items{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 20px;
+    background-color: #272A22;
+    color: #ffff;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.menu-active .menu-items{
+    display: block;
+}
+
+.menu-items li{
+    padding: 10px 0;
+}
+
 .botao_seguinte{
     right: 0;
     display: flex;
@@ -160,4 +179,54 @@ nav{
     max-width: 100%;
     height: auto;
     mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+}
+
+.lista-mais-vendidos {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.lista-mais-vendidos li {
+    padding: 5px 0; 
+    cursor: pointer; 
+}
+
+.lista-moedas {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.lista-moedas li {
+    padding: 5px 0; 
+    cursor: pointer; 
+}
+
+.lista-carros {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.lista-carros li {
+    padding: 5px 0; 
+    cursor: pointer; 
+}
+
+.lista-livros {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.lista-livros li {
+    padding: 5px 0; 
+    cursor: pointer; 
+}
+
+.sub-menu li {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu-item {
+    cursor: pointer;
+    margin: 5px 0;
 }

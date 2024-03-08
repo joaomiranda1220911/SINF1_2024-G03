@@ -8,6 +8,7 @@
     </head>
 
     <body>
+        <script src="script.js"></script>
 
         <nav>
                 <a href="/">
@@ -62,15 +63,39 @@
         </nav>
 
         <div class="nav-baixo">
-            <div>
+            <div class="menu">
                 <image src="./imagens/menu_icon.png" width="25px" alt=""></image>
                 <p>Todos</p>
             </div>
-            <p>Mais Vendidos</p>
-            <p>Moedas</p>
-            <p>Carros</p>
-            <p>Livros da Disney</p>
 
+            <div class="menu-items" data-target="lista-mais-vendidos">Mais Vendidos</div>
+                <ul id="lista-mais-vendidos" class="sub-menu" style="display:none;">
+                        <li>Moedas</li>
+                        <li>Carros</li>
+                        <li>Livros da Disney</li>
+                </ul>
+
+                <div class="menu-items moedas" data-target="lista-moedas">Moedas</div>
+                <ul id="lista-moedas" class="sub-menu" style="display:none;">
+                        <li>Euro</li>
+                        <li>Internacionais</li>
+                        <li>Antigas</li>
+                </ul>
+
+                <div class="menu-items carros" data-target="lista-carros">Carros</div>
+                <ul id="lista-carros" class="sub-menu" style="display:none;">
+                    <li>Carros Antigos</li>
+                    <li>Carros F1</li>
+                    <li>Carros WRC</li>
+                </ul>
+
+                <div class="menu-items livros" data-target="lista-livros">Livros da Disney</div>
+                <ul id="lista-livros" class="sub-menu" style="display:none;">
+                    <li>Mickey</li>
+                    <li>Frozen</li>
+                    <li>Rapunzel</li>
+                </ul>
+             
         </div>
 
         <div class="display_prod">

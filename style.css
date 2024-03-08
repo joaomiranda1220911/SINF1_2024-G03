@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #3C4435;
+    background-color: #1E2019;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #8DAB7F;
 }
@@ -15,7 +15,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    background-color: #3C4435;
+    background-color: #1E2019;
     color: #6F989B;
     padding: 20px;
     text-align: center;
@@ -37,7 +37,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1E2019;
+    background-color: #021527;
     padding: 10px 20px;
     color: white;
 }
@@ -47,34 +47,25 @@ nav{
     align-items: end;
     margin-left: 15px;
     font-size: 13px;
-    color: #8DAB7F;
+    color: #4C696B;
 }
 
 .nav-pais h1{
-    color:#8DAB7F;
+    color:#4C696B;
     font-size: 14px;
 }
 
 .nav-pesquisar{
     border: #8DAB7F;
-    border: 1px;
+    border: 1px solid #272A22;
     flex: 1;
     display: flex;
     align-items: center;
-    background-color: #ffff;
+    background-color: #021527;
     color: #3C4435;
     max-width: 1000px;
     border-radius: 4px;
     margin-left: 15px;
-}
-
-.nav-pesq-cat{
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    gap: 5px;
-    background-color:grey;
-    border-radius: 3px 0 0 3px;
 }
 
 .nav-pesquisar-input{
@@ -83,12 +74,14 @@ nav{
     padding-left: 20px;
     width: 100%;
     font-size: 16px;
+    background-color: #021527;
+    color: white;
 }
 
 .nav-pesquisar-icon{
     max-width: 39px;
     padding: 8px;
-    background-color: #3c4435;
+    background-color: #021527;
     border-radius: 0 2px 2px 0;
 }
 
@@ -121,11 +114,10 @@ nav{
 .nav-baixo{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
     padding: 8px 20px;
-    background-color: #272A22;
+    background-color: #05192A;
     color: #ffff;
-    font-size: 15px;
 }
 
 .nav-baixo div{
@@ -133,36 +125,6 @@ nav{
     align-items: center;
     gap: 5px;
     font-weight: 500;
-}
-
-.menu-items{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 8px 20px;
-    background-color: #272A22;
-    color: #ffff;
-    font-size: 15px;
-    list-style-type: none;
-}
-
-.menu-active .menu-items{
-    display: block;
-}
-
-.menu-items li{
-    padding: 10px 0;
-}
-
-.botao_seguinte{
-    right: 0;
-    display: flex;
-    margin-top: 200px;
-}
-
-.botao_anterior{
-    display: flex;
-    margin-top: 200px;
 }
 
 .display_prod{
@@ -181,52 +143,237 @@ nav{
     mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
 }
 
-.lista-mais-vendidos {
-    list-style-type: none; 
-    padding: 0;
+.logo{
+    overflow: hidden;
+    mask-image: radial-gradient(circle, #021527 50%, transparent 80%);
 }
 
-.lista-mais-vendidos li {
-    padding: 5px 0; 
-    cursor: pointer; 
+.dropdown_menu{
+    position: relative;
+    z-index: 10;
 }
 
-.lista-moedas {
-    list-style-type: none; 
-    padding: 0;
+.dropdown_menu div{
+    display: inline-block;
 }
 
-.lista-moedas li {
-    padding: 5px 0; 
-    cursor: pointer; 
-}
-
-.lista-carros {
-    list-style-type: none; 
-    padding: 0;
-}
-
-.lista-carros li {
-    padding: 5px 0; 
-    cursor: pointer; 
-}
-
-.lista-livros {
-    list-style-type: none; 
-    padding: 0;
-}
-
-.lista-livros li {
-    padding: 5px 0; 
-    cursor: pointer; 
-}
-
-.sub-menu li {
+.dropdown_menu button{
+    background-color: #05192A;
+    color: white;
+    padding: 10px 15px;
+    border: none;
     cursor: pointer;
-    padding: 5px;
 }
 
-.menu-item {
+.dropdown_menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown_menu .conteudo_todos{
+    display: none;
+    background-color: #05192A;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #05192A;
+    z-index: 20;
+}
+
+.dropdown_menu:hover .conteudo_todos{
+    display: block;
+    top: 100%;
+} 
+
+.dropdown_menu:hover button{
+    background-color: #0B2030;
+}
+
+.dropdown_menu a:hover{
+    background-color: #0B2030;
+}
+
+.menu-items_mais-vendidos{
+    position: relative;
+    z-index: 10;
+}
+
+.menu-items_mais-vendidos div{
+    display: inline-block;
+}
+
+.menu-items_mais-vendidos button{
+    background-color: #05192A;
+    color: white;
+    padding: 10px 15px;
+    border: none;
     cursor: pointer;
-    margin: 5px 0;
+}
+
+.menu-items_mais-vendidos a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.menu-items_mais-vendidos .conteudo_mais-vendidos{
+    display: none;
+    top: 100%;
+    background-color: #05192A;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #05192A;
+    z-index: 20;
+}
+
+.menu-items_mais-vendidos:hover .conteudo_mais-vendidos{
+    display: block;
+} 
+
+.menu-items_mais-vendidos:hover button{
+    background-color: #0B2030;
+}
+
+.menu-items_mais-vendidos a:hover{
+    background-color: #0B2030;
+}
+
+.menu-items_moedas{
+    position: relative;
+    z-index: 10;
+}
+
+.menu-items_moedas div{
+    display: inline-block;
+}
+
+.menu-items_moedas button{
+    background-color: #05192A;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-items_moedas a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.menu-items_moedas .conteudo_moedas{
+    display: none;
+    top: 100%;
+    background-color: #05192A;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #05192A;
+    z-index: 20;
+}
+
+.menu-items_moedas:hover .conteudo_moedas{
+    display: block;
+} 
+
+.menu-items_moedas:hover button{
+    background-color: #0B2030;
+}
+
+.menu-items_moedas a:hover{
+    background-color: #0B2030;
+}
+
+.menu-items_carros{
+    position: relative;
+    z-index: 10;
+}
+
+.menu-items_carros div{
+    display: inline-block;
+}
+
+.menu-items_carros button{
+    background-color: #05192A;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-items_carros a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.menu-items_carros .conteudo_carros{
+    display: none;
+    top: 100%;
+    background-color: #05192A;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #05192A;
+    z-index: 20;
+}
+
+.menu-items_carros:hover .conteudo_carros{
+    display: block;
+} 
+
+.menu-items_carros:hover button{
+    background-color: #0B2030;
+}
+
+.menu-items_carros a:hover{
+    background-color: #0B2030;
+}
+
+.menu-items_livros{
+    position: relative;
+    z-index: 10;
+}
+
+.menu-items_livros div{
+    display: inline-block;
+}
+
+.menu-items_livros button{
+    background-color: #05192A;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-items_livros a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.menu-items_livros .conteudo_livros{
+    display: none;
+    top: 100%;
+    background-color: #05192A;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #05192A;
+    z-index: 20;
+}
+
+.menu-items_livros:hover .conteudo_livros{
+    display: block;
+} 
+
+.menu-items_livros:hover button{
+    background-color: #0B2030;
+}
+
+.menu-items_livros a:hover{
+    background-color: #0B2030;
 }

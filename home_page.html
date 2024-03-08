@@ -11,7 +11,7 @@
 
         <nav>
                 <a href="/">
-                    <image alt="logo" src="./imagens/logo.jpg" height="80" width="80"></image> 
+                    <image alt="logo" src="./imagens/logo.jpg" class="logo" height="80" width="80"></image> 
                 </a>
 
             <div class="nav-pais">
@@ -25,11 +25,6 @@
             </div>
 
             <div class="nav-pesquisar">
-
-                <div class="nav-pesq-cat">
-                    <p>Todas</p>
-                    <image src="./imagens/dropdown_icon.png" height="12"></image>
-                </div>
                 <input type="text" class="nav-pesquisar-input" placeholder="O que está à procura?">
                 <image src="./imagens/search_icon.png" class="nav-pesquisar-icon" alt="icon_pesquisa"></image>
             </div>
@@ -62,38 +57,52 @@
         </nav>
 
         <div class="nav-baixo">
-            <div class="menu">
-                <image src="./imagens/menu_icon.png" width="25px" alt=""></image>
-                <p>Todos</p>
+            <div class="dropdown_menu">
+                <button><image src="./imagens/menu_icon.png" width="25px" alt=""></image>
+                    <p>Todos</p>
+                 </button>
+                <div class="conteudo_todos">
+                    <a href="pag_colecao_moedas">Moedas</a>
+                    <a href="pag_colecao_carros">Carros</a>
+                    <a href="pag_colecao_livros">Livros da Disney</a>
+                </div>
             </div>
 
-            <div class="menu-items" data-target="lista-mais-vendidos">Mais Vendidos</div>
-                <ul id="lista-mais-vendidos" class="sub-menu" style="display:none;">
-                        <li>Moedas</li>
-                        <li>Carros</li>
-                        <li>Livros da Disney</li>
-                </ul>
+            <div class="menu-items_mais-vendidos">
+                <button><h3>Mais Vendidos</h1></button>
+                <div class="conteudo_mais-vendidos">
+                    <a href="pag_colecao_moedas">Moedas</a>
+                    <a href="pag_colecao_carros">Carros</a>
+                    <a href="pag_colecao_livros">Livros da Disney</a>
+                </div>
+            </div>
 
-                <div class="menu-items moedas" data-target="lista-moedas">Moedas</div>
-                <ul id="lista-moedas" class="sub-menu" style="display:none;">
-                        <li>Euro</li>
-                        <li>Internacionais</li>
-                        <li>Antigas</li>
-                </ul>
+            <div class="menu-items_moedas">
+                <button><h3>Moedas</h3></button>
+                <div class="conteudo_moedas">
+                    <a href="pag_colecao_moedas-euro">Euro</a>
+                    <a href="pag_colecao_moedas-internacionais">Internacionais</a>
+                    <a href="pag_colecao_moedas-antigas">Antigas</a>
+                </div>
+            </div>
 
-                <div class="menu-items carros" data-target="lista-carros">Carros</div>
-                <ul id="lista-carros" class="sub-menu" style="display:none;">
-                    <li>Carros Antigos</li>
-                    <li>Carros F1</li>
-                    <li>Carros WRC</li>
-                </ul>
+            <div class="menu-items_carros">
+                <button><h3>Carros</h3></button>
+                <div class="conteudo_carros">
+                    <a href="pag_colecao_carros-antigos">Antigos</a>
+                    <a href="pag_colecao_carros-f1">Formula 1</a>
+                    <a href="pag_colecao_carros-wrc">WRC</a>
+                </div>
+            </div>
 
-                <div class="menu-items livros" data-target="lista-livros">Livros da Disney</div>
-                <ul id="lista-livros" class="sub-menu" style="display:none;">
-                    <li>Mickey</li>
-                    <li>Frozen</li>
-                    <li>Rapunzel</li>
-                </ul>
+            <div class="menu-items_livros">
+                <button><h3>Livros da Disney</h3></button>
+                <div class="conteudo_livros">
+                    <a href="pag_colecao_livros-classicos">Clássicos</a>
+                    <a href="pag_colecao_livros-villains">Disney Villains</a>
+                    <a href="pag_colecao_livros-parks">Disney Parks</a>
+                </div>
+            </div>
              
         </div>
 

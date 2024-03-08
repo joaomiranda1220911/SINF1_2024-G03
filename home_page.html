@@ -4,120 +4,83 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Page</title>
-
-        <style>
-
-            body{
-                background-color: #1E2019;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                color: #8DAB7F;
-            }
-
-            h1{
-                color: #A0BA96;
-                font-size: 40px;
-                text-align: center;
-            }
-
-            form{
-                text-align: right;
-                margin-top: 20px;
-            }
-
-            input[type="text"],
-            input[type="submit"] {
-                padding: 10px;
-                border: 1px solid #8DAB7F;
-                border-radius: 20px;
-                font-size: 16px;
-                background-color: #1E2019;
-                color: #8DAB7F;
-            }
-
-            input[type="text"] {
-                width: 160px;
-                margin-right: 5px;
-            }
-
-            input[type="submit"] {
-                cursor: pointer;
-            }
-
-            .procura_colec{
-                display: flex;
-                align-items: center;
-            }
-
-            .tipos_colec{
-                margin-right: auto;
-                margin-top: 20px;
-                font-size: 20px;
-            }
-
-            .logo_site{
-                display: flex;
-                align-items: center;
-                margin-left: 30px;
-                margin-right: auto;
-            }
-
-            .nome_site{
-                display: flex;
-                margin-left: 150px;
-            }
-            
-            .footer{
-                display: flex;
-                justify-content: space-between;
-                margin-top: 500px;
-                background-color: #1E2019;
-                color: #4C696B;
-                padding: 20px;
-                text-align: center;
-            }
-
-            .footer > div {
-                display: flex;
-                flex-direction: column;
-                flex: 1;
-                padding: 20px;
-            }
-
-            h2{
-                color: #587B7F;
-                font-size: 24px;
-            }
-
-            p{
-                font-size: 16px;
-            }
-
-        </style>
-</head>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
     <body>
 
-        <div class="logo_site">
+        <nav>
+                <a href="/">
+                    <image alt="logo" src="./imagens/logo.jpg" height="80" width="80"></image> 
+                </a>
 
-            <image alt="logo" src="logo.jpg" height="80" width="80"></image> 
+            <div class="nav-pais">
+                <image src="./imagens/location_icon.png" height="20" width="localização"></image>
 
-            <div class="nome_site">
-                <h1>INSERIR NOME/LOGO DA PÁGINA</h1>
+                <div>
+                    <p>Entregar em</p>
+                    <h1>Portugal</h1>
+                </div>
+
             </div>
 
-        </div>  
-        
-        <div class="procura_colec">
+            <div class="nav-pesquisar">
 
-            <div class="tipos_colec">
-                Tipo de Coleções
+                <div class="nav-pesq-cat">
+                    <p>Todas</p>
+                    <image src="./imagens/dropdown_icon.png" height="12"></image>
+                </div>
+                <input type="text" class="nav-pesquisar-input" placeholder="O que está à procura?">
+                <image src="./imagens/search_icon.png" class="nav-pesquisar-icon" alt="icon_pesquisa"></image>
             </div>
 
-            <form action="/search" method="GET">
-                <input type="text" name="q" class="search" placeholder="O que está à procura?">
-                <input type="submit" value="Pesquisar" class="submit">
-            </form>
+            <div class="nav-linguagem">
+                <image src="./imagens/pt_flag.jpg" width="25px" alt="pt_flag" ></image>
+                <p>PT</p>
+                <image src="./imagens/dropdown_icon.png" width="8px" alt=""></image>
+            </div>
 
+            <div class="nav-texto">
+
+                <p>Olá, inicie sessão</p>
+                <h1>Conta e Listas <image src="./imagens/dropdown_icon.png" width=8px alt=""></image></h1>
+
+            </div>
+
+            <div class="nav-texto">
+
+                <p>Devoluções e</p>
+                <h1>Encomendas <image src="./imagens/dropdown_icon.png" width=8px alt=""></image></h1>
+
+            </div>
+
+            <a href="" class="nav-carrinho">
+                <image src="./imagens/cart_icon.png" width="35px" alt=""></image>
+                <h4>Carrinho</h4>
+            </a>
+
+        </nav>
+
+        <div class="nav-baixo">
+            <div>
+                <image src="./imagens/menu_icon.png" width="25px" alt=""></image>
+                <p>Todos</p>
+            </div>
+            <p>Mais Vendidos</p>
+            <p>Apoio ao Cliente</p>
+            <p>Registo</p>
+            <p>Cartões de Oferta</p>
+            <p>Vender</p>
+        </div>
+
+        <div class="header-slider">
+            <a href="#" class="botao_anterior">&#8592;</a>
+            <a href="#" class="botao_seguinte">&#8594;</a>
+            <ul>
+                <img src="./imagens/header1.jpg" class="header-img" alt="">
+                <img src="./imagens/header2.jpg" class="header-img" alt="">
+                <img src="./imagens/header3.jpg" class="header-img" alt="">
+            </ul>
         </div>
 
         <div class="footer">

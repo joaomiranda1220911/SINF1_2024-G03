@@ -13,12 +13,14 @@ body{
 
 .footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: auto;
     background-color: #1E2019;
-    color: #6F989B;
+    color: #4C696B;
     padding: 20px;
     text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
 }
 
 .footer > div {
@@ -26,6 +28,15 @@ body{
     flex-direction: column;
     flex: 1;
     padding: 20px;
+}
+
+.footer p{
+    margin-top: 10px;
+    color:#587B7F;
+}
+
+.footer h2{
+    color:#8FACB8;
 }
 
 a{
@@ -51,13 +62,13 @@ nav{
 }
 
 .nav-pais h1{
-    color:#4C696B;
+    color:#8FACB8;
     font-size: 14px;
 }
 
 .nav-pesquisar{
     border: #8DAB7F;
-    border: 1px solid #272A22;
+    border: 2px solid #272A22;
     flex: 1;
     display: flex;
     align-items: center;
@@ -140,7 +151,7 @@ nav{
 .header-img{
     max-width: 100%;
     height: auto;
-    mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 30%, #000 70%, transparent 100%);
 }
 
 .logo{
@@ -240,16 +251,16 @@ nav{
     background-color: #0B2030;
 }
 
-.menu-items_moedas{
+.menu-colecoes{
     position: relative;
     z-index: 10;
 }
 
-.menu-items_moedas div{
+.menu-colecoes div{
     display: inline-block;
 }
 
-.menu-items_moedas button{
+.menu-colecoes button{
     background-color: #05192A;
     color: white;
     padding: 10px 15px;
@@ -257,14 +268,14 @@ nav{
     cursor: pointer;
 }
 
-.menu-items_moedas a{
+.menu-colecoes a{
     display: block;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
 }
 
-.menu-items_moedas .conteudo_moedas{
+.menu-colecoes .conteudo_colecoes{
     display: none;
     top: 100%;
     background-color: #05192A;
@@ -274,28 +285,28 @@ nav{
     z-index: 20;
 }
 
-.menu-items_moedas:hover .conteudo_moedas{
+.menu-colecoes:hover .conteudo_colecoes{
     display: block;
 } 
 
-.menu-items_moedas:hover button{
+.menu-colecoes:hover button{
     background-color: #0B2030;
 }
 
-.menu-items_moedas a:hover{
+.menu-colecoes a:hover{
     background-color: #0B2030;
 }
 
-.menu-items_carros{
+.menu-eventos{
     position: relative;
     z-index: 10;
 }
 
-.menu-items_carros div{
+.menu-eventos div{
     display: inline-block;
 }
 
-.menu-items_carros button{
+.menu-eventos button{
     background-color: #05192A;
     color: white;
     padding: 10px 15px;
@@ -303,14 +314,14 @@ nav{
     cursor: pointer;
 }
 
-.menu-items_carros a{
+.menu-eventos a{
     display: block;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
 }
 
-.menu-items_carros .conteudo_carros{
+.menu-eventos .conteudo_eventos{
     display: none;
     top: 100%;
     background-color: #05192A;
@@ -320,60 +331,14 @@ nav{
     z-index: 20;
 }
 
-.menu-items_carros:hover .conteudo_carros{
+.menu-eventos:hover .conteudo_eventos{
     display: block;
 } 
 
-.menu-items_carros:hover button{
+.menu-eventos:hover button{
     background-color: #0B2030;
 }
 
-.menu-items_carros a:hover{
-    background-color: #0B2030;
-}
-
-.menu-items_livros{
-    position: relative;
-    z-index: 10;
-}
-
-.menu-items_livros div{
-    display: inline-block;
-}
-
-.menu-items_livros button{
-    background-color: #05192A;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-items_livros a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
-.menu-items_livros .conteudo_livros{
-    display: none;
-    top: 100%;
-    background-color: #05192A;
-    position: absolute;
-    min-width: 100px;
-    box-shadow: 2px 2px 5px #05192A;
-    z-index: 20;
-}
-
-.menu-items_livros:hover .conteudo_livros{
-    display: block;
-} 
-
-.menu-items_livros:hover button{
-    background-color: #0B2030;
-}
-
-.menu-items_livros a:hover{
+.menu-eventos a:hover{
     background-color: #0B2030;
 }

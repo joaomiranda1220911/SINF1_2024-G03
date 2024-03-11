@@ -116,12 +116,6 @@ nav{
     font-size: 16px;
 }
 
-.nav-carrinho{
-    display: flex;
-    align-items: center;
-    margin: 0 15px;
-}
-
 .nav-baixo{
     display: flex;
     align-items: center;

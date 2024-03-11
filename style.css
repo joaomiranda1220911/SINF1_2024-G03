@@ -233,6 +233,7 @@ nav{
     z-index: 20;
 }
 
+
 .menu-items_mais-vendidos:hover .conteudo_mais-vendidos{
     display: block;
 } 
@@ -336,3 +337,50 @@ nav{
 .menu-eventos a:hover{
     background-color: #0B2030;
 }
+
+.menu-adicionar-item-coleção{
+    position: relative;
+    z-index: 10;
+}
+
+.menu-adicionar-item-coleção div{
+    display: inline-block;
+}
+
+.menu-adicionar-item-coleção button{
+    background-color: #05192A;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-adicionar-item-coleção a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.menu-adicionar-item-coleção .conteudo_adicionarItem{
+    display: none;
+    top: 100%;
+    background-color: #05192A;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #05192A;
+    z-index: 20;
+}
+
+.menu-adicionar-item-coleção:hover .conteudo_adicionarItem{
+    display: block;
+}
+
+.menu-adicionar-item-coleção:hover button{
+    background-color: #0B2030;
+}
+
+.menu-adicionar-item-coleção a:hover{
+    background-color: #0B2030;
+}
+

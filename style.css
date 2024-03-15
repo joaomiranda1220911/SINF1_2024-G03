@@ -1,3 +1,5 @@
+/* ---------- HOME PAGE ---------- */
+
 *{
   padding: 0;
   margin: 0;
@@ -429,4 +431,139 @@ nav{
 
 .menu-adicionar-item-coleção a:hover{
     background-color: #0B2030;
+}
+
+/* ---------- pag_adicionar-item ---------- */
+
+.form_nome-item {
+    border: #8DAB7F;
+    border: 2px solid #272A22;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #021527;
+    color: #8DAB7F;
+    max-width: 400px;
+    border-radius: 4px;
+    margin-left: 15px;
+    height: 50px;
+}
+
+.form_preco-item {
+    border: #8DAB7F;
+    border: 2px solid #272A22;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #021527;
+    color: #8DAB7F;
+    max-width: 400px;
+    border-radius: 4px;
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 50px;
+}
+
+.form_local-compra{
+    border: #8DAB7F;
+    border: 2px solid #272A22;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #021527;
+    color: #8DAB7F;
+    max-width: 400px;
+    border-radius: 4px;
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 50px;
+}
+
+.form_colecao-item{
+    border: #8DAB7F;
+    border: 2px solid #272A22;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #021527;
+    color: #8DAB7F;
+    max-width: 400px;
+    border-radius: 4px;
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 50px;
+}
+
+.adicionar_item_titulo{
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.form_nome-item input {
+    width: 100%;
+    background-color: #021527;
+    color: #8DAB7F;
+    font-size: 16px;
+    align-items: left;
+}
+
+.form_preco-item input {
+    width: 100%;
+    background-color: #021527;
+    color: #8DAB7F;
+    font-size: 16px;
+    align-items: left;
+}
+
+.form_local-compra input {
+    width: 100%;
+    background-color: #021527;
+    color: #8DAB7F;
+    font-size: 16px;
+    align-items: left;
+}
+
+.form_colecao-item input{
+    width: 100%;
+    background-color: #021527;
+    color: #8DAB7F;
+    font-size: 16px;
+    align-items: left;
+}
+
+.submit_btn button {
+    background-color: #021527; 
+    border: none; 
+    color: #8DAB7F;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 4px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.submit_btn button:hover {
+    background-color: #05192A; 
+}
+
+.home-page_btn {
+    background-color: #021527;
+    border: none;
+    color: #8DAB7F;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.home-page_btn button:hover {
+    background-color: #05192A; 
 }

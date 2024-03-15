@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollectWorld - Adicionar Item</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="adicionar_item_titulo">
+        <h1>ADICIONAR ITEM</h1>
+    </div>      
+
+    <button class="home-page_btn">
+        <h4><a href="home_page.html">Voltar a Página Inicial</h4></a>
+    </button>
+
+    <form action="processar_dados.php" method="post">
+
+        <div class="form_nome-item">
+            <label for="item">Nome do Item:</label>
+            <input type="text" id="nome_item" name="nome_item" required>
+        </div>
+
+        <div class="form_colecao-item">
+            <label for="item">Coleção:</label>
+            <input type="text" id="colecao_item" name="colecao_item" required>
+        </div>
+
+        <div class="form_preco-item">
+            <label for="item">Preço do Item:</label>
+            <input type="text" id="preco_item" name="preco_item" required>
+        </div>
+
+        <div class="form_local-compra">
+            <label for="item">Local de Compra:</label>
+            <input type="text" id="local_item" name="local_item" required>
+        </div>
+
+        <div class="submit_btn">
+            <button type="submit">Adicionar à Coleção</button>
+        </div>
+    </form>
+
+</body>
+</html>

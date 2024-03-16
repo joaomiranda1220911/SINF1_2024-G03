@@ -9,40 +9,52 @@
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
+
+    <nav>
+        <a href="home_page.html">
+            <image alt="logo" src="./imagens/logo.jpg" class="logo" height="80" width="80"></image> 
+        </a>
+
+        <button class="home-page_btn">
+                <h4><a href="home_page.html">Voltar à Página Inicial</h4></a>
+        </button>
+
+    </nav>
+
+
+<div class="form">
     <div class="adicionar_item_titulo">
         <h1>ADICIONAR ITEM</h1>
     </div>      
 
-    <button class="home-page_btn">
-        <h4><a href="home_page.html">Voltar à Página Inicial</h4></a>
-    </button>
-
     <form action="processar_dados.php" method="post">
 
         <div class="form_nome-item">
-            <label for="item">Nome do Item:</label>
+            <label for="nome_item">Nome do Item:</label>
             <input type="text" id="nome_item" name="nome_item" required>
         </div>
 
         <div class="form_colecao-item">
-            <label for="item">Coleção:</label>
+            <label for="colecao_item">Coleção:</label>
             <input type="text" id="colecao_item" name="colecao_item" required>
         </div>
 
         <div class="form_preco-item">
-            <label for="item">Preço do Item:</label>
+            <label for="preco_item">Preço do Item:</label>
             <input type="text" id="preco_item" name="preco_item" required>
         </div>
 
         <div class="form_local-compra">
-            <label for="item">Local de Compra:</label>
+            <label for="itlocal_itemem">Local de Compra:</label>
             <input type="text" id="local_item" name="local_item" required>
         </div>
 
-        <div class="submit_btn">
-            <button type="submit">Adicionar à Coleção</button>
+        <div class="adicionar-item_btn">
+            <button type="submit">Adicionar Item</button>
         </div>
+
     </form>
+</div>
 
 </body>
 </html>

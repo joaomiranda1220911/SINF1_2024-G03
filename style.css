@@ -567,3 +567,89 @@ nav{
 .home-page_btn button:hover {
     background-color: #05192A; 
 }
+
+/* ---------- pag_criar-evento ---------- */
+
+
+.criar_evento_titulo{
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.form_nome-evento input {
+    width: 100%;
+    background-color: #021527;
+    color: #8DAB7F;
+    font-size: 16px;
+    align-items: left;
+}
+
+.form_tema-evento input {
+    width: 100%;
+    background-color: #021527;
+    color: #8DAB7F;
+    font-size: 16px;
+    align-items: left;
+}
+
+.form_preco-evento input {
+    width: 100%;
+    background-color: #021527;
+    color: #8DAB7F;
+    font-size: 16px;
+    align-items: left;
+}
+
+.form_local-compra-bilhetes input{
+    width: 100%;
+    background-color: #021527;
+    color: #8DAB7F;
+    font-size: 16px;
+    align-items: left;
+}
+
+.form_local-evento input{
+    width: 100%;
+    background-color: #021527;
+    color: #8DAB7F;
+    font-size: 16px;
+    align-items: left;
+}
+
+
+.submit_btn button {
+    background-color: #021527;
+    border: none;
+    color: #8DAB7F;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.submit_btn button:hover {
+    background-color: #05192A;
+}
+
+.home-page_btn {
+    background-color: #021527;
+    border: none;
+    color: #8DAB7F;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.home-page_btn button:hover {
+    background-color: #05192A;
+}

@@ -1,5 +1,3 @@
-/* ---------- HOME PAGE ---------- */
-
 *{
   padding: 0;
   margin: 0;
@@ -12,6 +10,8 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #8DAB7F;
 }
+
+/* ---------- HOME PAGE ---------- */
 
 .footer{
     display: flex;
@@ -155,30 +155,6 @@ nav{
     mask-image: radial-gradient(circle, #021527 50%, transparent 80%);
 }
 
-.dropdown_menu{
-    position: relative;
-    z-index: 10;
-}
-
-.dropdown_menu div{
-    display: inline-block;
-}
-
-.dropdown_menu button{
-    background-color: #05192A;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown_menu a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
 .dropdown_menu .conteudo_todos{
     display: none;
     background-color: #05192A;
@@ -193,163 +169,43 @@ nav{
     top: 100%;
 } 
 
-.dropdown_menu:hover button{
+.dropdown_menu:hover button,
+.dropdown_menu a:hover,
+.menu-items_mais-vendidos:hover button,
+.menu-items_mais-vendidos a:hover,
+.menu-colecoes:hover button,
+.menu-colecoes a:hover,
+.menu-eventos:hover button,
+.menu-eventos a:hover,
+.menu-adicionar-item-coleção:hover button,
+.menu-adicionar-item-coleção a:hover,
+.menu-adicionar-item-coleção:hover button,
+.menu-adicionar-item-coleção a:hover
+{
     background-color: #0B2030;
 }
 
-.dropdown_menu a:hover{
-    background-color: #0B2030;
-}
-
-.menu-items_mais-vendidos{
-    position: relative;
-    z-index: 10;
-}
-
-.menu-items_mais-vendidos div{
-    display: inline-block;
-}
-
-.menu-items_mais-vendidos button{
-    background-color: #05192A;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-items_mais-vendidos a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
-.menu-items_mais-vendidos .conteudo_mais-vendidos{
-    display: none;
-    top: 100%;
-    background-color: #05192A;
-    position: absolute;
-    min-width: 100px;
-    box-shadow: 2px 2px 5px #05192A;
-    z-index: 20;
-}
-
-
-
-.menu-items_mais-vendidos:hover .conteudo_mais-vendidos{
-    display: block;
-} 
-
-.menu-items_mais-vendidos:hover button{
-    background-color: #0B2030;
-}
-
-.menu-items_mais-vendidos a:hover{
-    background-color: #0B2030;
-}
-
-.menu-colecoes{
-    position: relative;
-    z-index: 10;
-}
-
-.menu-colecoes div{
-    display: inline-block;
-}
-
-.menu-colecoes button{
-    background-color: #05192A;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-colecoes a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
-.menu-colecoes .conteudo_colecoes{
-    display: none;
-    top: 100%;
-    background-color: #05192A;
-    position: absolute;
-    min-width: 100px;
-    box-shadow: 2px 2px 5px #05192A;
-    z-index: 20;
-}
-
-.menu-colecoes:hover .conteudo_colecoes{
-    display: block;
-} 
-
-.menu-colecoes:hover button{
-    background-color: #0B2030;
-}
-
-.menu-colecoes a:hover{
-    background-color: #0B2030;
-}
-
-.menu-eventos{
-    position: relative;
-    z-index: 10;
-}
-
-.menu-eventos div{
-    display: inline-block;
-}
-
-.menu-eventos button{
-    background-color: #05192A;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-eventos a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
-.menu-eventos .conteudo_eventos{
-    display: none;
-    top: 100%;
-    background-color: #05192A;
-    position: absolute;
-    min-width: 100px;
-    box-shadow: 2px 2px 5px #05192A;
-    z-index: 20;
-}
-
-.menu-eventos:hover .conteudo_eventos{
-    display: block;
-} 
-
-.menu-eventos:hover button{
-    background-color: #0B2030;
-}
-
-.menu-eventos a:hover{
-    background-color: #0B2030;
-}
-
+.dropdown_menu,
+.menu-items_mais-vendidos,
+.menu-colecoes,
+.menu-eventos,
 .menu-adicionar-item-coleção{
     position: relative;
     z-index: 10;
 }
 
+.dropdown_menu div,
+.menu-items_mais-vendidos div,
+.menu-colecoes div,
+.menu-eventos div,
 .menu-adicionar-item-coleção div{
     display: inline-block;
 }
 
+.dropdown_menu button,
+.menu-items_mais-vendidos button,
+.menu-colecoes button,
+.menu-eventos button,
 .menu-adicionar-item-coleção button{
     background-color: #05192A;
     color: white;
@@ -358,6 +214,10 @@ nav{
     cursor: pointer;
 }
 
+.dropdown_menu a,
+.menu-items_mais-vendidos a,
+.menu-colecoes a,
+.menu-eventos a,
 .menu-adicionar-item-coleção a{
     display: block;
     color: white;
@@ -365,7 +225,10 @@ nav{
     padding: 10px 15px;
 }
 
-.menu-adicionar-item-coleção .conteudo_adicionarItem{
+.menu-items_mais-vendidos .conteudo_mais-vendidos,
+.menu-colecoes .conteudo_colecoes,
+.menu-eventos .conteudo_eventos,
+.menu-adicionar-item-coleção .conteudo_adicionar-item-coleção{
     display: none;
     top: 100%;
     background-color: #05192A;
@@ -375,71 +238,17 @@ nav{
     z-index: 20;
 }
 
+.menu-items_mais-vendidos:hover .conteudo_mais-vendidos,
+.menu-colecoes:hover .conteudo_colecoes,
+.menu-eventos:hover .conteudo_eventos,
 .menu-adicionar-item-coleção:hover .conteudo_adicionarItem{
     display: block;
-}
-
-.menu-adicionar-item-coleção:hover button{
-    background-color: #0B2030;
-}
-
-.menu-adicionar-item-coleção a:hover{
-    background-color: #0B2030;
-}
-
-.menu-adicionar-item-coleção{
-    position: relative;
-    z-index: 10;
-}
-
-.menu-adicionar-item-coleção div{
-    display: inline-block;
-}
-
-.menu-adicionar-item-coleção button{
-    background-color: #05192A;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-adicionar-item-coleção a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
-.menu-adicionar-item-coleção .conteudo_adicionarItem{
-    display: none;
-    top: 100%;
-    background-color: #05192A;
-    position: absolute;
-    min-width: 100px;
-    box-shadow: 2px 2px 5px #05192A;
-    z-index: 20;
-}
-
-.menu-adicionar-item-coleção:hover .conteudo_adicionarItem{
-    display: block;
-}
-
-.menu-adicionar-item-coleção:hover button{
-    background-color: #0B2030;
-}
-
-.menu-adicionar-item-coleção a:hover{
-    background-color: #0B2030;
-}
-
-/* ---------- pag_adicionar-item ---------- */
+} 
 
 .form_nome-item,
 .form_colecao-item,
 .form_preco-item,
-.form_local-compra
- {
+.form_local-compra{
     border: #8DAB7F;
     flex: 1;
     display: flex;
@@ -462,7 +271,8 @@ nav{
     white-space: nowrap;
 }
 
-.adicionar_item_titulo{
+.adicionar_item_titulo,
+.criar_evento_titulo{
     display: flex;
     margin-left: 15px;
     margin-bottom: 50px;
@@ -487,14 +297,17 @@ nav{
     padding-left: 10px;
 }
 
-.adicionar-item_btn {
+.adicionar-item_btn,
+.criar-evento_btn{
     display: flex;
     justify-content: center; 
     align-items: center; 
     margin-top: 40px;
 }
 
-.adicionar-item_btn button {
+.adicionar-item_btn button,
+.criar-evento_btn button,
+.home-page_btn {
     background-color: #021527;
     border: 1px solid;
     color: #8DAB7F;
@@ -505,38 +318,12 @@ nav{
     transition: background-color 0.3s ease;
 }
 
-.adicionar-item_btn button:hover {
-    background-color: #8DAB7F; 
-    color: #05192A;
-}
-
-.home-page_btn {
-    background-color: #05192A;
-    border: 1px solid;
-    border-radius: 4px;
-    color: #8DAB7F;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: absolute;
-    top: 30px;
-    right: 20px;
-}
-
-.home-page_btn:hover {
-    background-color: #8DAB7F; 
-    color: #05192A;
-}
-
-/* ---------- pag_criar-evento ---------- */
-
 .form_nome-evento,
 .form_tema-evento,
 .form_preco-bilhete,
 .form_local-compra-bilhetes,
-.form_local-evento
+.form_local-evento,
+.form_imagem-item
  {
     border: #8DAB7F;
     flex: 1;
@@ -556,25 +343,18 @@ nav{
 .form_tema-evento label,
 .form_preco-bilhete label,
 .form_local-compra-bilhetes label,
-.form_local-evento label
-{
+.form_local-evento label,
+.form_imagem-item label{
     margin-right: 10px;
     white-space: nowrap;
-}
-
-.criar_evento_titulo{
-    display: flex;
-    margin-left: 15px;
-    margin-bottom: 50px;
-    margin-top: 20px;
 }
 
 .form_nome-evento input,
 .form_tema-evento input,
 .form_preco-bilhete input,
 .form_local-compra-bilhetes input,
-.form_local-evento input
- {
+.form_local-evento input,
+.form_imagem-item input{
     flex-grow: 1;
     border: 1px solid;
     border-radius: 10px;
@@ -589,27 +369,12 @@ nav{
     padding-left: 10px;
 }
 
-.criar-evento_btn {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-top: 40px;
-}
-
-.criar-evento_btn button {
-    background-color: #021527;
-    border: 1px solid;
-    color: #8DAB7F;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.criar-evento_btn button:hover {
+.criar-evento_btn button:hover,
+.adicionar-item_btn button:hover,
+.home-page_btn:hover,
+.form_imagem-item input[type="submit"]:hover{
     background-color: #8DAB7F; 
-    color: #05192A;
+    color: #05192A; 
 }
 
 .form{
@@ -626,3 +391,38 @@ nav{
     max-width: 600px;
     min-width: 300px; 
     }
+
+.form_imagem-item input[type="submit"] {
+    background-color: #021527;
+    border: 1px solid;
+    color: #8DAB7F;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 100%;
+    width: 100%; 
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+.form_imagem-item input[type="file"] {
+    flex-grow: 1;
+    padding: 15px 0 0 10px;
+    border: 0px solid;
+    border-radius: 10px;
+    background-color: #05192A;
+    color: #8DAB7F;
+    font-size: 16px;
+    align-items: center;
+    height: 100%;
+    width: 400px;
+    outline: none;
+    cursor: pointer;
+}
+
+.form_imagem-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -282,7 +282,8 @@ nav{
 }
 
 .adicionar_item_titulo,
-.criar_evento_titulo{
+.criar_evento_titulo,
+.login_titulo{
     display: flex;
     margin-left: 15px;
     margin-bottom: 50px;
@@ -308,7 +309,8 @@ nav{
 }
 
 .adicionar-item_btn,
-.criar-evento_btn{
+.criar-evento_btn,
+.sign-up_btn{
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -317,7 +319,8 @@ nav{
 
 .adicionar-item_btn button,
 .criar-evento_btn button,
-.home-page_btn {
+.home-page_btn,
+.sign-up_btn {
     background-color: #021527;
     border: 1px solid;
     color: #8DAB7F;
@@ -333,7 +336,9 @@ nav{
 .form_preco-bilhete,
 .form_local-compra-bilhetes,
 .form_local-evento,
-.form_imagem-item
+.form_imagem-item,
+.form_Username,
+.form_Password
  {
     border: #8DAB7F;
     flex: 1;
@@ -354,7 +359,9 @@ nav{
 .form_preco-bilhete label,
 .form_local-compra-bilhetes label,
 .form_local-evento label,
-.form_imagem-item label{
+.form_imagem-item label,
+.form_Username label,
+.form_Password label{
     margin-right: 10px;
     white-space: nowrap;
 }
@@ -364,7 +371,9 @@ nav{
 .form_preco-bilhete input,
 .form_local-compra-bilhetes input,
 .form_local-evento input,
-.form_imagem-item input{
+.form_imagem-item input,
+.form_Username input,
+.form_Password input{
     flex-grow: 1;
     border: 1px solid;
     border-radius: 10px;
@@ -379,6 +388,7 @@ nav{
     padding-left: 10px;
 }
 
+.sign-up_btn:hover,
 .criar-evento_btn button:hover,
 .adicionar-item_btn button:hover,
 .home-page_btn:hover,

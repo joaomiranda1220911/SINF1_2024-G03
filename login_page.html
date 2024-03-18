@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8"><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollectWorld - Login and SignUP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<nav>
+    <a href="home_page.html">
+        <image alt="logo" src="./imagens/logo.jpg" class="logo" height="80" width="80"></image>
+    </a>
+
+    <button class="home-page_btn">
+        <h4><a href="home_page.html">Voltar à Página Inicial</a></h4>
+    </button>
+
+</nav>
+<div class="form">
+    <div class="login">
+        <h1>Login</h1>
+    </div>
+    <form action="processar_dados.php" method="post">
+
+        <div class="form_Username">
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" name="Username" required>
+        </div>
+
+        <div class="Password">
+            <label for="Password">Password:</label>
+            <input type="text" id="Password" name="Password" required>
+        </div>
+
+        <div class="sign_up">
+            <a href="login.html">
+                <button type="submit">Sign Up</button>
+            </a>
+
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

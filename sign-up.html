@@ -22,36 +22,32 @@
 </nav>
 
 <div class="form">
-    <div class="login_titulo">
-        <h1>Login</h1>
+    <div class="sign-up_titulo">
+        <h1>Sign-Up</h1>
     </div> 
 
     <form action="processar_dados.php" method="post">
 
         <div class="form_Username">
             <label for="Username">Username:</label>
-            <input type="text" id="Username" name="Username" required>
+            <input type="text" placeholder="Crie um Username" id="Username" name="Username" required>
         </div>
 
         <div class="form_Password">
             <label for="Password">Password:</label>
-            <input type="text" id="Password" name="Password" required>
+            <input type="text" placeholder="Crie uma Password" id="Password" name="Password" required>
         </div>
 
-            <div class="log-in_btn">
-                <button type="submit">Login</button>
-            </div>
-
-    </form>
-        <div class="sign-up_texto">  
-            <h5>Se ainda não se registou, registe-se aqui:</h5>
+        <div class="form_Confirmar-Password">
+            <label for="Confirmar-Password">Confirmar:</label>
+            <input type="text" id="Password" placeholder="Insira novamente a Password" name="Confirmar-Password" required>
         </div>
 
         <div class="sign-up_btn">
-            <a href="sign-up.html">
-                <button>Sign Up</button>
-            </a>
+            <button type="submit">Criar Conta</button>
         </div>
+
+    </form>
 
 </div>
 

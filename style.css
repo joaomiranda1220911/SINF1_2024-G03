@@ -283,7 +283,8 @@ nav{
 
 .adicionar_item_titulo,
 .criar_evento_titulo,
-.login_titulo{
+.login_titulo,
+.sign-up_titulo{
     display: flex;
     margin-left: 15px;
     margin-bottom: 50px;
@@ -310,17 +311,20 @@ nav{
 
 .adicionar-item_btn,
 .criar-evento_btn,
-.sign-up_btn{
+.sign-up,
+.sign-up_btn,
+.log-in_btn{
     display: flex;
     justify-content: center; 
     align-items: center; 
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .adicionar-item_btn button,
 .criar-evento_btn button,
 .home-page_btn,
-.sign-up_btn {
+.sign-up_btn button,
+.log-in_btn button{
     background-color: #021527;
     border: 1px solid;
     color: #8DAB7F;
@@ -338,8 +342,8 @@ nav{
 .form_local-evento,
 .form_imagem-item,
 .form_Username,
-.form_Password
- {
+.form_Password,
+.form_Confirmar-Password{
     border: #8DAB7F;
     flex: 1;
     display: flex;
@@ -361,7 +365,9 @@ nav{
 .form_local-evento label,
 .form_imagem-item label,
 .form_Username label,
-.form_Password label{
+.form_Password label,
+.form_Confirmar-Password label
+{
     margin-right: 10px;
     white-space: nowrap;
 }
@@ -373,7 +379,9 @@ nav{
 .form_local-evento input,
 .form_imagem-item input,
 .form_Username input,
-.form_Password input{
+.form_Password input,
+.form_Confirmar-Password input
+{
     flex-grow: 1;
     border: 1px solid;
     border-radius: 10px;
@@ -388,16 +396,19 @@ nav{
     padding-left: 10px;
 }
 
-.sign-up_btn:hover,
+.sign-up_btn button:hover,
+.log-in_btn button:hover,
 .criar-evento_btn button:hover,
 .adicionar-item_btn button:hover,
 .home-page_btn:hover,
-.form_imagem-item input[type="submit"]:hover{
+.form_imagem-item input[type="submit"]:hover
+{
     background-color: #8DAB7F; 
     color: #05192A; 
 }
 
-.form{
+.form
+{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -412,7 +423,8 @@ nav{
     min-width: 300px; 
     }
 
-.form_imagem-item input[type="submit"] {
+.form_imagem-item input[type="submit"] 
+{
     background-color: #021527;
     border: 1px solid;
     color: #8DAB7F;
@@ -426,7 +438,8 @@ nav{
     padding-right: 10px;
 }
 
-.form_imagem-item input[type="file"] {
+.form_imagem-item input[type="file"] 
+{
     flex-grow: 1;
     padding: 15px 0 0 10px;
     border: 0px solid;
@@ -441,8 +454,13 @@ nav{
     cursor: pointer;
 }
 
-.form_imagem-item{
+.form_imagem-item
+{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.sign-up_texto{
+    margin-top: 30px;
 }

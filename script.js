@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     form.onsubmit = function(event) {
         const username = document.getElementById("Username").value;
         const password = document.getElementById("Password").value;
-        const confirmPassword = document.getElementById("Confirmar-Password").value;
+        const confirmPasswordInput = document.getElementById("Confirmar-Password");
+        const confirmPassword = confirmPasswordInput ? confirmPasswordInput.value : null;
 
         // Valida o username
         if (!validateUsername(username)) {
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         // Verifica se a password de confirmação é igual à password
-        if (password !== confirmPassword) {
+        if (confirmPasswordInput && password !== confirmPassword) {
             alert("As passwords não coincidem.");
             event.preventDefault();
             return false;
@@ -39,4 +40,30 @@ function validateUsername(username) {
 function validatePassword(password) {
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d\w\W]{8,}$/;
     return passwordRegex.test(password);
+}
+
+function togglePasswordVisibility1(){
+    var passwordInput = document.getElementById("Password");
+    var toggleButton = passwordInput.nextElementSibling;
+
+    if(passwordInput.type === "password"){
+        passwordInput.type = "text";
+        toggleButton.textContent = "Esconder";
+    }else{
+        passwordInput.type = "password";
+        toggleButton.textContent = "Mostrar";
+    }
+}
+
+function togglePasswordVisibility2(){
+    var passwordInput = document.getElementById("Confirmar-Password");
+    var toggleButton = passwordInput.nextElementSibling;
+    
+    if(passwordInput.type === "password"){
+        passwordInput.type = "text";
+        toggleButton.textContent = "Esconder";
+    }else{
+        passwordInput.type = "password";
+        toggleButton.textContent = "Mostrar";
+    }
 }

@@ -479,3 +479,49 @@ nav{
     padding: 10px 10px 10px 10px;
     margin-bottom: 8px;
 }
+
+/* -------- Página Coleção -------- */
+
+.container h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.container h2{
+    margin-right:50px; 
+}
+
+.item p{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 30px 100px 100px 100px;
+  }
+  
+.item {
+    background-color: #021527;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+  
+.item p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+}
+  
+.chapeu_img img, .hogwarts_express_img img, .castelo_img img {
+    width: 200px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    mask-image: none;
+}

@@ -329,6 +329,11 @@ nav{
     margin-top: 10px;
 }
 
+.form_Password button,
+.form_Confirmar-Password button{
+    width: 120px;
+}
+
 .adicionar-item_btn button,
 .criar-evento_btn button,
 .home-page_btn,

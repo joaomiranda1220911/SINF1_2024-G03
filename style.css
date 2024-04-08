@@ -437,6 +437,7 @@ nav{
 .form_Confirmar-Password button:hover,
 .editar-btn:hover,
 .eliminar-btn:hover,
+.criar-colecao_btn button:hover,
 .form_imagem-item input[type="submit"]:hover
 {
     background-color: #8DAB7F; 

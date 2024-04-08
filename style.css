@@ -187,8 +187,8 @@ nav{
 .menu-eventos a:hover,
 .menu-adicionar-item-coleção:hover button,
 .menu-adicionar-item-coleção a:hover,
-.menu-adicionar-item-coleção:hover button,
-.menu-adicionar-item-coleção a:hover
+.menu-criar-coleção:hover button,
+.menu-criar-coleção a:hover
 {
     background-color: #0B2030;
 }
@@ -197,7 +197,8 @@ nav{
 .menu-items_mais-vendidos,
 .menu-colecoes,
 .menu-eventos,
-.menu-adicionar-item-coleção{
+.menu-adicionar-item-coleção,
+.menu-criar-coleção{
     position: relative;
     z-index: 10;
 }
@@ -206,7 +207,8 @@ nav{
 .menu-items_mais-vendidos div,
 .menu-colecoes div,
 .menu-eventos div,
-.menu-adicionar-item-coleção div{
+.menu-adicionar-item-coleção div
+.menu-criar-coleção div{
     display: inline-block;
 }
 
@@ -214,7 +216,8 @@ nav{
 .menu-items_mais-vendidos button,
 .menu-colecoes button,
 .menu-eventos button,
-.menu-adicionar-item-coleção button{
+.menu-adicionar-item-coleção button,
+.menu-criar-coleção button{
     background-color: #05192A;
     color: white;
     padding: 10px 15px;
@@ -226,7 +229,8 @@ nav{
 .menu-items_mais-vendidos a,
 .menu-colecoes a,
 .menu-eventos a,
-.menu-adicionar-item-coleção a{
+.menu-adicionar-item-coleção a
+.menu-criar-coleção a{
     display: block;
     color: white;
     text-decoration: none;
@@ -235,8 +239,8 @@ nav{
 
 .menu-items_mais-vendidos .conteudo_mais-vendidos,
 .menu-colecoes .conteudo_colecoes,
-.menu-eventos .conteudo_eventos,
-.menu-adicionar-item-coleção .conteudo_adicionar-item-coleção{
+.menu-eventos .conteudo_eventos
+{
     display: none;
     top: 100%;
     background-color: #05192A;
@@ -248,8 +252,8 @@ nav{
 
 .menu-items_mais-vendidos:hover .conteudo_mais-vendidos,
 .menu-colecoes:hover .conteudo_colecoes,
-.menu-eventos:hover .conteudo_eventos,
-.menu-adicionar-item-coleção:hover .conteudo_adicionarItem{
+.menu-eventos:hover .conteudo_eventos
+{
     display: block;
 } 
 
@@ -258,7 +262,9 @@ nav{
 .form_preco-item,
 .form_local-compra,
 .form_data-item,
-.form_descricao-item{
+.form_descricao-item,
+.form_nome-colecao,
+.form_tema-colecao{
     border: #8DAB7F;
     flex: 1;
     display: flex;
@@ -287,7 +293,9 @@ nav{
 .form_preco-item label,
 .form_local-compra label
 .form_data-item label,
-.form_descricao-item label{
+.form_descricao-item label,
+.form_nome-colecao label,
+.form_tema-colecao label{
     margin-right: 10px;
     white-space: nowrap;
 }
@@ -295,7 +303,8 @@ nav{
 .adicionar_item_titulo,
 .criar_evento_titulo,
 .login_titulo,
-.sign-up_titulo{
+.sign-up_titulo,
+.criar_colecao_titulo{
     display: flex;
     margin-bottom: 40px;
     margin-top: 20px;
@@ -307,7 +316,9 @@ nav{
 .form_preco-item input,
 .form_local-compra input,
 .form_data-item input,
-.form_descricao-item input{
+.form_descricao-item input,
+.form_nome-colecao input,
+.form_tema-colecao input{
     flex-grow: 1;
     border: 1px solid;
     border-radius: 10px;
@@ -328,7 +339,10 @@ nav{
 .sign-up_btn,
 .form_Password button,
 .form_Confirmar-Password button,
-.log-in_btn{
+.log-in_btn,
+.criar-colecao_btn,
+.editar-btn, 
+.eliminar-btn{
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -346,7 +360,10 @@ nav{
 .sign-up_btn button,
 .form_Password button,
 .form_Confirmar-Password button,
-.log-in_btn button{
+.log-in_btn button,
+.criar-colecao_btn button,
+.editar-btn, 
+.eliminar-btn{
     background-color: #021527;
     border: 1px solid;
     color: #8DAB7F;
@@ -355,6 +372,12 @@ nav{
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.item-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; 
 }
 
 .form_nome-evento,
@@ -411,6 +434,9 @@ nav{
 .home-page_btn:hover,
 .form_Password button:hover,
 .form_Confirmar-Password button:hover,
+.form_Confirmar-Password button:hover,
+.editar-btn:hover,
+.eliminar-btn:hover,
 .form_imagem-item input[type="submit"]:hover
 {
     background-color: #8DAB7F; 

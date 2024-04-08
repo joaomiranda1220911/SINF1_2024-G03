@@ -543,12 +543,12 @@ nav{
 .item_1 p,
 .item_2 p,
 .item_3 p,
-.colecao
-.evento1,
-.evento2,
-.evento3,
-.evento4,
-.evento5{
+.colecao p
+.evento1 p,
+.evento2 p,
+.evento3 p,
+.evento4 p,
+.evento5 p{
     display: flex;
     justify-content: center;
     color: white;
@@ -556,8 +556,8 @@ nav{
     line-height: 1.6;
 }
   
-.chapeu_img img, .hogwarts_express_img img, .castelo_img img, .hp_img, .Lugola_sinf1\.jpg, .Oeiras_brink_sinf1\.jpg
-, .Valbrick_sinf1\.jpg, .FanLego_sinf1\.jpg, .FicZone_sinf1\.jpg{
+.chapeu_img img, .hogwarts_express_img img, .castelo_img img, .hp_img, .Lugola_sinf1\.jpg img, .Oeiras_brink_sinf1\.jpg img
+, .Valbrick_sinf1\.jpg img, .FanLego_sinf1\.jpg img, .FicZone_sinf1\.jpg img{
     width: 200px;
     max-width: 300px;
     height: auto;

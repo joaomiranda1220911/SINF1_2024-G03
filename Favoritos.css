@@ -1,0 +1,81 @@
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            background-color: #1E2019;
+            color: #8DAB7F;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1E2019; /* Cor do fundo alterada */
+            color: #8DAB7F;
+        }
+
+        h1 {
+            text-align: center;
+            color: #8FACB8;
+        }
+
+        .favorite-link {
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #021527;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #8DAB7F;
+            transition: background-color 0.3s ease;
+        }
+
+        .favorite-link:hover {
+            background-color: #4C696B;
+        }
+
+        a {
+            text-decoration: none;
+            color: #8DAB7F;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #021527;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            background-color: #1E2019;
+            color: #4C696B;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer > div {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .footer p {
+            margin-top: 10px;
+            color: #587B7F;
+        }
+
+        .footer h2 {
+            color: #8FACB8;
+        }
+

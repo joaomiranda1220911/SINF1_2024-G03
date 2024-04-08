@@ -497,7 +497,8 @@ nav{
 }
 
 .container h2{
-    margin-right:50px; 
+    margin-right:50px;
+    color: #8DAB7F;
 }
 
 .container {
@@ -506,7 +507,8 @@ nav{
   
 .item_1,
 .item_2,
-.item_3{
+.item_3,
+.colecao{
     background-color: #021527;
     padding: 20px;
     margin: 20px 0;
@@ -519,14 +521,16 @@ nav{
 
 .item_1 button,
 .item_2 button,
-.item_3 button{
+.item_3 button,
+.colecao{
     color:#021527;
     background-color: #021527;
 }
   
 .item_1 p,
 .item_2 p,
-.item_3 p {
+.item_3 p,
+.colecao{
     display: flex;
     justify-content: center;
     color: white;
@@ -534,7 +538,7 @@ nav{
     line-height: 1.6;
 }
   
-.chapeu_img img, .hogwarts_express_img img, .castelo_img img {
+.chapeu_img img, .hogwarts_express_img img, .castelo_img img, .hp_img {
     width: 200px;
     max-width: 300px;
     height: auto;

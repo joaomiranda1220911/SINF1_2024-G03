@@ -568,13 +568,19 @@ nav{
     align-items: flex-start; 
 }
 
-.item_chapeu_img, .descricao_item {
+.item_chapeu_img, 
+.item_hogwarts_express_img,
+.item_castelo_img,
+.descricao_item {
     flex: 1;
 }
 
-.item_chapeu_img img {
-    width: 100%; 
+.item_chapeu_img img,
+.item_hogwarts_express_img img, 
+.item_castelo_img img{
+    width: 80%; 
     height: auto; 
+    margin: 60px 0 0 60px;
 }
 
 .descricao_item li{

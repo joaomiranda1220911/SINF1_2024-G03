@@ -256,7 +256,8 @@ nav{
 .form_nome-item,
 .form_colecao-item,
 .form_preco-item,
-.form_local-compra{
+.form_local-compra,
+.form_data-item{
     border: #8DAB7F;
     flex: 1;
     display: flex;
@@ -283,7 +284,8 @@ nav{
 .form_nome-item label,
 .form_colecao-item label,
 .form_preco-item label,
-.form_local-compra label{
+.form_local-compra label
+.form_data-item label{
     margin-right: 10px;
     white-space: nowrap;
 }
@@ -301,7 +303,8 @@ nav{
 .form_nome-item input,
 .form_colecao-item input,
 .form_preco-item input,
-.form_local-compra input{
+.form_local-compra input,
+.form_data-item input{
     flex-grow: 1;
     border: 1px solid;
     border-radius: 10px;
@@ -568,7 +571,7 @@ nav{
 }
 
 .descricao_item li{
-    margin: 10px 0 20px 0;
+    margin: 10px 150px 20px 0;
 }
 
 .descricao_item p{

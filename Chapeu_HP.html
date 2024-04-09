@@ -101,6 +101,7 @@
                 <img src="./imagens/chapeu.png" alt="Chapéu Selecionador de Harry Potter">
             </div>
             <div class="descricao_item">
+                <button class="favorito-btn">&#9734; Adicionar aos Favoritos</button>
                 <ul>
                     <li><h2>Coleção:</h2> <p>Harry Potter</p></li>
                     <li><h2>Descrição:</h2> <p>Chapéu Selecionador de Harry Potter com 561 peças 
@@ -116,5 +117,37 @@
         </div>
     </div>
 </div>
+<script>
+    function toggleFavorito() {
+        const favoritoId = 'casteloHogwarts'; 
+        let favoritos = localStorage.getItem('favoritos') ? JSON.parse(localStorage.getItem('favoritos')) : [];
+        
+        if (favoritos.includes(favoritoId)) {
+            favoritos = favoritos.filter(id => id !== favoritoId);
+        } else {
+            favoritos.push(favoritoId);
+        }
+        
+        localStorage.setItem('favoritos', JSON.stringify(favoritos)); 
+        atualizaBotaoFavorito(); 
+    }
+    
+    function atualizaBotaoFavorito() {
+        const favoritoId = 'casteloHogwarts';
+        const botao = document.querySelector('.favorito-btn');
+        let favoritos = localStorage.getItem('favoritos') ? JSON.parse(localStorage.getItem('favoritos')) : [];
+        
+        if (favoritos.includes(favoritoId)) {
+            botao.innerHTML = '&#9733; Remover dos Favoritos'; 
+        } else {
+            botao.innerHTML = '&#9734; Adicionar aos Favoritos'; 
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        atualizaBotaoFavorito(); 
+        document.querySelector('.favorito-btn').addEventListener('click', toggleFavorito);
+    });
+</script>
 </body>
 </html>

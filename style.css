@@ -667,3 +667,15 @@ ul {
     background-position: right 10px center;
     background-size: 16px 16px;
   }
+
+  .favorito-btn {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    color: #FFEC8B; /* Cor dourada para a estrela */
+    font-size: 20px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor em formato de mãozinha */
+}
+
+.favorito-btn:hover {
+    color: #FFEC8B; /* Cor ao passar o mouse */
+}

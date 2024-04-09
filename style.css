@@ -342,7 +342,11 @@ nav{
 .log-in_btn,
 .criar-colecao_btn,
 .editar-btn, 
-.eliminar-btn{
+.eliminar-btn,
+.av_eve_1 input[type="submit"],
+.av_eve_2 input[type="submit"],
+.av_eve_3 input[type="submit"]
+{
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -363,7 +367,10 @@ nav{
 .log-in_btn button,
 .criar-colecao_btn button,
 .editar-btn, 
-.eliminar-btn{
+.eliminar-btn,
+.av_eve_1 input[type="submit"],
+.av_eve_2 input[type="submit"],
+.av_eve_3 input[type="submit"]{
     background-color: #021527;
     border: 1px solid;
     color: #8DAB7F;
@@ -438,7 +445,10 @@ nav{
 .editar-btn:hover,
 .eliminar-btn:hover,
 .criar-colecao_btn button:hover,
-.form_imagem-item input[type="submit"]:hover
+.form_imagem-item input[type="submit"]:hover,
+.av_eve_1 input[type="submit"]:hover,
+.av_eve_2 input[type="submit"]:hover,
+.av_eve_3 input[type="submit"]:hover
 {
     background-color: #8DAB7F; 
     color: #05192A; 
@@ -549,7 +559,7 @@ nav{
 .evento5,
 .av_eve_1,
 .av_eve_2,
-.ava_eve_3{
+.av_eve_3{
     background-color: #021527;
     padding: 20px;
     margin: 20px 0;
@@ -578,7 +588,7 @@ nav{
 .evento5 p,
 .av_eve_1 p,
 .av_eve_2 p,
-.ava_eve_3 p{
+.av_eve_3 p{
     display: flex;
     justify-content: center;
     color: white;
@@ -641,3 +651,19 @@ nav{
 ul {
     list-style-type: none;
 }
+
+  select {
+    margin-top: 20px;
+    padding: 8px 30px 8px 10px;
+    border: 2px solid #8DAB7F; 
+    border-radius: 10px; 
+    display: block; 
+    width: 100%; 
+    appearance: none; 
+    background-color: #0B2030; 
+    color:white;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="%23666" d="M6.516 7.548c0.436-0.446 1.043-0.481 1.576 0l2.411 2.317 2.362-2.317c0.533-0.481 1.141-0.446 1.576 0 0.436 0.445 0.408 1.197 0 1.615l-3.038 2.974c-0.408 0.418-1.141 0.418-1.549 0l-3.038-2.974c-0.408-0.418-0.436-1.17 0-1.615z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+  }

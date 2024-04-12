@@ -346,8 +346,7 @@ nav{
 .eliminar-btn,
 .av_eve_1 input[type="submit"],
 .av_eve_2 input[type="submit"],
-.av_eve_3 input[type="submit"]
-{
+.av_eve_3 input[type="submit"]{
     display: flex;
     justify-content: center; 
     align-items: center; 

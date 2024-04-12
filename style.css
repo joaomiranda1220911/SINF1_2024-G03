@@ -217,7 +217,8 @@ nav{
 .menu-colecoes button,
 .menu-eventos button,
 .menu-adicionar-item-coleção button,
-.menu-criar-coleção button{
+.menu-criar-coleção button
+{
     background-color: #05192A;
     color: white;
     padding: 10px 15px;
@@ -352,7 +353,8 @@ nav{
 .eliminar-btn,
 .av_eve_1 input[type="submit"],
 .av_eve_2 input[type="submit"],
-.av_eve_3 input[type="submit"]{
+.av_eve_3 input[type="submit"],
+.evento_btn{
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -377,7 +379,8 @@ nav{
 .eliminar-btn,
 .av_eve_1 input[type="submit"],
 .av_eve_2 input[type="submit"],
-.av_eve_3 input[type="submit"]{
+.av_eve_3 input[type="submit"],
+.evento_btn{
     background-color: #021527;
     border: 1px solid;
     color: #8DAB7F;
@@ -462,7 +465,8 @@ nav{
 .form_imagem-item input[type="submit"]:hover,
 .av_eve_1 input[type="submit"]:hover,
 .av_eve_2 input[type="submit"]:hover,
-.av_eve_3 input[type="submit"]:hover
+.av_eve_3 input[type="submit"]:hover,
+.evento_btn:hover
 {
     background-color: #8DAB7F; 
     color: #05192A; 

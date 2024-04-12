@@ -264,7 +264,8 @@ nav{
 .form_data-item,
 .form_descricao-item,
 .form_nome-colecao,
-.form_tema-colecao{
+.form_tema-colecao,
+.form_importancia-item{
     border: #8DAB7F;
     flex: 1;
     display: flex;
@@ -295,7 +296,9 @@ nav{
 .form_data-item label,
 .form_descricao-item label,
 .form_nome-colecao label,
-.form_tema-colecao label{
+.form_tema-colecao label,
+.form_importancia-item label
+{
     margin-right: 10px;
     white-space: nowrap;
 }
@@ -304,8 +307,10 @@ nav{
 .criar_evento_titulo,
 .login_titulo,
 .sign-up_titulo,
-.criar_colecao_titulo{
+.criar_colecao_titulo,
+.favoritos_titulo{
     display: flex;
+    justify-content: center;
     margin-bottom: 40px;
     margin-top: 20px;
     font-size: 22px;
@@ -318,7 +323,8 @@ nav{
 .form_data-item input,
 .form_descricao-item input,
 .form_nome-colecao input,
-.form_tema-colecao input{
+.form_tema-colecao input,
+.form_importancia-item input{
     flex-grow: 1;
     border: 1px solid;
     border-radius: 10px;
@@ -396,7 +402,8 @@ nav{
 .form_imagem-item,
 .form_Username,
 .form_Password,
-.form_Confirmar-Password{
+.form_Confirmar-Password,
+.form_importancia-item{
     border: #8DAB7F;
     flex: 1;
     display: flex;
@@ -419,7 +426,8 @@ nav{
 .form_imagem-item input,
 .form_Username input,
 .form_Password input,
-.form_Confirmar-Password input
+.form_Confirmar-Password input,
+.form_importancia-item select
 {
     flex-grow: 1;
     border: 1px solid;
@@ -433,6 +441,10 @@ nav{
     width: 100%;
     outline: none;
     padding-left: 10px;
+}
+
+.form_importancia-item select{
+    margin-bottom: 20px;
 }
 
 .sign-up_btn button:hover,

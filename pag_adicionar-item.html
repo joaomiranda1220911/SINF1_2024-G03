@@ -121,6 +121,25 @@
             <input type="text" id="preco_item" name="preco_item" required>
         </div>
 
+        <div class="form_importancia-item">
+
+        <form action="/submit" method="post" onsubmit="mostrarConfirmacao()">
+            <label for="importancia_item">Importância do Item:</label><br>
+            <select id="importancia_item" name="importancia_item">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+
+            </select><br><br>
+
+        </form>
+
+
+        </div>
+
+
         <div class="form_local-compra">
             <label for="local_item">Local de Compra: </label>
             <input type="text" id="local_item" name="local_item" required>

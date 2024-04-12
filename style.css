@@ -1,17 +1,17 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body{
+body {
     background-color: #1E2019;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #8DAB7F;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     margin-top: auto;
@@ -23,28 +23,28 @@ body{
     margin-right: 400px;
 }
 
-.footer > div {
+.footer>div {
     display: flex;
     flex-direction: column;
     flex: 1;
     padding: 20px;
 }
 
-.footer p{
+.footer p {
     margin-top: 10px;
-    color:#587B7F;
+    color: #587B7F;
 }
 
-.footer h2{
-    color:#8FACB8;
+.footer h2 {
+    color: #8FACB8;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,7 +53,7 @@ nav{
     color: white;
 }
 
-.nav-pais{
+.nav-pais {
     display: flex;
     align-items: end;
     margin-left: 15px;
@@ -61,12 +61,12 @@ nav{
     color: #4C696B;
 }
 
-.nav-pais h1{
-    color:#8FACB8;
+.nav-pais h1 {
+    color: #8FACB8;
     font-size: 14px;
 }
 
-.nav-pesquisar{
+.nav-pesquisar {
     border: #8DAB7F;
     border: 2px solid #272A22;
     flex: 1;
@@ -79,7 +79,7 @@ nav{
     margin-left: 15px;
 }
 
-.nav-pesquisar-input{
+.nav-pesquisar-input {
     border: none;
     outline: none;
     padding-left: 20px;
@@ -89,14 +89,14 @@ nav{
     color: white;
 }
 
-.nav-pesquisar-icon{
+.nav-pesquisar-icon {
     max-width: 39px;
     padding: 8px;
     background-color: #021527;
     border-radius: 0 2px 2px 0;
 }
 
-.nav-linguagem{
+.nav-linguagem {
     display: flex;
     align-items: center;
     gap: 2px;
@@ -104,9 +104,9 @@ nav{
     margin-left: 15px;
 }
 
-.nav-login .btnLogin-popup{
+.nav-login .btnLogin-popup {
     margin-left: 15px;
-    width: 80px ;
+    width: 80px;
     height: 50px;
     background: transparent;
     border: 2px solid #272A22;
@@ -126,7 +126,7 @@ nav{
 
 }
 
-.nav-baixo{
+.nav-baixo {
     display: flex;
     align-items: center;
     gap: 50px;
@@ -135,35 +135,35 @@ nav{
     color: #ffff;
 }
 
-.nav-baixo div{
+.nav-baixo div {
     display: flex;
     align-items: center;
     gap: 5px;
     font-weight: 500;
 }
 
-.display_prod{
+.display_prod {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.display_prod div{
+.display_prod div {
     max-width: 34%;
 }
 
-.header-img{
+.header-img {
     max-width: 100%;
     height: auto;
     mask-image: linear-gradient(to bottom, transparent 0%, #000 30%, #000 70%, transparent 100%);
 }
 
-.logo{
+.logo {
     overflow: hidden;
     mask-image: radial-gradient(circle, #021527 50%, transparent 80%);
 }
 
-.dropdown_menu .conteudo_todos{
+.dropdown_menu .conteudo_todos {
     display: none;
     background-color: #05192A;
     position: absolute;
@@ -172,10 +172,10 @@ nav{
     z-index: 20;
 }
 
-.dropdown_menu:hover .conteudo_todos{
+.dropdown_menu:hover .conteudo_todos {
     display: block;
     top: 100%;
-} 
+}
 
 .dropdown_menu:hover button,
 .dropdown_menu a:hover,
@@ -188,8 +188,7 @@ nav{
 .menu-adicionar-item-coleção:hover button,
 .menu-adicionar-item-coleção a:hover,
 .menu-criar-coleção:hover button,
-.menu-criar-coleção a:hover
-{
+.menu-criar-coleção a:hover {
     background-color: #0B2030;
 }
 
@@ -198,7 +197,7 @@ nav{
 .menu-colecoes,
 .menu-eventos,
 .menu-adicionar-item-coleção,
-.menu-criar-coleção{
+.menu-criar-coleção {
     position: relative;
     z-index: 10;
 }
@@ -207,8 +206,7 @@ nav{
 .menu-items_mais-vendidos div,
 .menu-colecoes div,
 .menu-eventos div,
-.menu-adicionar-item-coleção div
-.menu-criar-coleção div{
+.menu-adicionar-item-coleção div .menu-criar-coleção div {
     display: inline-block;
 }
 
@@ -217,8 +215,7 @@ nav{
 .menu-colecoes button,
 .menu-eventos button,
 .menu-adicionar-item-coleção button,
-.menu-criar-coleção button
-{
+.menu-criar-coleção button {
     background-color: #05192A;
     color: white;
     padding: 10px 15px;
@@ -230,8 +227,7 @@ nav{
 .menu-items_mais-vendidos a,
 .menu-colecoes a,
 .menu-eventos a,
-.menu-adicionar-item-coleção a
-.menu-criar-coleção a{
+.menu-adicionar-item-coleção a .menu-criar-coleção a {
     display: block;
     color: white;
     text-decoration: none;
@@ -240,8 +236,7 @@ nav{
 
 .menu-items_mais-vendidos .conteudo_mais-vendidos,
 .menu-colecoes .conteudo_colecoes,
-.menu-eventos .conteudo_eventos
-{
+.menu-eventos .conteudo_eventos {
     display: none;
     top: 100%;
     background-color: #05192A;
@@ -253,10 +248,9 @@ nav{
 
 .menu-items_mais-vendidos:hover .conteudo_mais-vendidos,
 .menu-colecoes:hover .conteudo_colecoes,
-.menu-eventos:hover .conteudo_eventos
-{
+.menu-eventos:hover .conteudo_eventos {
     display: block;
-} 
+}
 
 .form_nome-item,
 .form_colecao-item,
@@ -266,7 +260,7 @@ nav{
 .form_descricao-item,
 .form_nome-colecao,
 .form_tema-colecao,
-.form_importancia-item{
+.form_importancia-item {
     border: #8DAB7F;
     flex: 1;
     display: flex;
@@ -293,13 +287,11 @@ nav{
 .form_nome-item label,
 .form_colecao-item label,
 .form_preco-item label,
-.form_local-compra label
-.form_data-item label,
+.form_local-compra label .form_data-item label,
 .form_descricao-item label,
 .form_nome-colecao label,
 .form_tema-colecao label,
-.form_importancia-item label
-{
+.form_importancia-item label {
     margin-right: 10px;
     white-space: nowrap;
 }
@@ -309,7 +301,7 @@ nav{
 .login_titulo,
 .sign-up_titulo,
 .criar_colecao_titulo,
-.favoritos_titulo{
+.favoritos_titulo {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
@@ -325,7 +317,7 @@ nav{
 .form_descricao-item input,
 .form_nome-colecao input,
 .form_tema-colecao input,
-.form_importancia-item input{
+.form_importancia-item input {
     flex-grow: 1;
     border: 1px solid;
     border-radius: 10px;
@@ -349,20 +341,20 @@ nav{
 .log-in_btn,
 .criar-colecao_btn,
 .adicionar-btn,
-.editar-btn, 
+.editar-btn,
 .eliminar-btn,
 .av_eve_1 input[type="submit"],
 .av_eve_2 input[type="submit"],
 .av_eve_3 input[type="submit"],
-.evento_btn{
+.evento_btn {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
 }
 
 .form_Password button,
-.form_Confirmar-Password button{
+.form_Confirmar-Password button {
     width: 120px;
 }
 
@@ -375,12 +367,12 @@ nav{
 .log-in_btn button,
 .criar-colecao_btn button,
 .adicionar-btn,
-.editar-btn, 
+.editar-btn,
 .eliminar-btn,
 .av_eve_1 input[type="submit"],
 .av_eve_2 input[type="submit"],
 .av_eve_3 input[type="submit"],
-.evento_btn{
+.evento_btn {
     background-color: #021527;
     border: 1px solid;
     color: #8DAB7F;
@@ -394,7 +386,7 @@ nav{
 .item-actions {
     display: flex;
     justify-content: flex-end;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .form_nome-evento,
@@ -406,7 +398,7 @@ nav{
 .form_Username,
 .form_Password,
 .form_Confirmar-Password,
-.form_importancia-item{
+.form_importancia-item {
     border: #8DAB7F;
     flex: 1;
     display: flex;
@@ -430,8 +422,7 @@ nav{
 .form_Username input,
 .form_Password input,
 .form_Confirmar-Password input,
-.form_importancia-item select
-{
+.form_importancia-item select {
     flex-grow: 1;
     border: 1px solid;
     border-radius: 10px;
@@ -446,7 +437,7 @@ nav{
     padding-left: 10px;
 }
 
-.form_importancia-item select{
+.form_importancia-item select {
     margin-bottom: 20px;
 }
 
@@ -466,30 +457,27 @@ nav{
 .av_eve_1 input[type="submit"]:hover,
 .av_eve_2 input[type="submit"]:hover,
 .av_eve_3 input[type="submit"]:hover,
-.evento_btn:hover
-{
-    background-color: #8DAB7F; 
-    color: #05192A; 
+.evento_btn:hover {
+    background-color: #8DAB7F;
+    color: #05192A;
 }
 
-.form
-{
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     background-color: #021527;
     border-radius: 100px;
-    margin-left: auto; 
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
     width: calc(100% - 500px);
     max-width: 600px;
-    min-width: 300px; 
-    }
+    min-width: 300px;
+}
 
-.form_imagem-item input[type="submit"] 
-{
+.form_imagem-item input[type="submit"] {
     background-color: #021527;
     border: 1px solid;
     color: #8DAB7F;
@@ -498,13 +486,12 @@ nav{
     cursor: pointer;
     transition: background-color 0.3s ease;
     height: 100%;
-    width: 100%; 
+    width: 100%;
     margin-left: 10px;
     padding-right: 10px;
 }
 
-.form_imagem-item input[type="file"] 
-{
+.form_imagem-item input[type="file"] {
     flex-grow: 1;
     padding: 15px 0 0 10px;
     border: 0px solid;
@@ -519,27 +506,26 @@ nav{
     cursor: pointer;
 }
 
-.form_imagem-item
-{
+.form_imagem-item {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sign-up_texto{
+.sign-up_texto {
     margin-top: 30px;
 }
 
-.form_Password{
+.form_Password {
     margin-left: 70px;
 }
 
-.form_Confirmar-Password{
+.form_Confirmar-Password {
     margin-left: 65px;
 }
 
 .form_Password button,
-.form_Confirmar-Password button{
+.form_Confirmar-Password button {
     height: 40px;
     font-size: 14px;
     padding: 10px 10px 10px 10px;
@@ -548,24 +534,24 @@ nav{
 
 /* -------- Página Coleção -------- */
 
-.container h1{
+.container h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 }
 
-.container h2{
-    margin-right:50px;
-    margin-right:50px;
+.container h2 {
+    margin-right: 50px;
+    margin-right: 50px;
     color: #8DAB7F;
-    margin-right:50px; 
+    margin-right: 50px;
     color: #8DAB7F;
 }
 
 .container {
     padding: 30px 100px 100px 100px;
 }
-  
+
 .item_1,
 .item_2,
 .item_3,
@@ -577,12 +563,25 @@ nav{
 .evento5,
 .av_eve_1,
 .av_eve_2,
-.av_eve_3{
+.av_eve_3 {
     background-color: #021527;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item_todos_1,
+.item_todos_2,
+.item_todos_3{
+    background-color: #021527;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     gap: 20px;
@@ -590,11 +589,11 @@ nav{
 
 .item_1 button,
 .item_2 button,
-.item_3 button{
-    color:#021527;
+.item_3 button {
+    color: #021527;
     background-color: #021527;
 }
-  
+
 .item_1 p,
 .item_2 p,
 .item_3 p,
@@ -606,16 +605,26 @@ nav{
 .evento5 p,
 .av_eve_1 p,
 .av_eve_2 p,
-.av_eve_3 p{
+.av_eve_3 p {
     display: flex;
     justify-content: center;
     color: white;
     font-size: 16px;
     line-height: 1.6;
 }
-  
-.chapeu_img img, .hogwarts_express_img img, .castelo_img img, .hp_img, .Lugola_sinf1\.jpg img, .Oeiras_brink_sinf1\.jpg img
-, .Valbrick_sinf1\.jpg img, .FanLego_sinf1\.jpg img, .FicZone_sinf1\.jpg img, .Roclug\.JPG img, .SpringBreak_sinf1\.JPG img, .Brickalissimo\.JPG img{
+
+.chapeu_img img,
+.hogwarts_express_img img,
+.castelo_img img,
+.hp_img,
+.Lugola_sinf1\.jpg img,
+.Oeiras_brink_sinf1\.jpg img,
+.Valbrick_sinf1\.jpg img,
+.FanLego_sinf1\.jpg img,
+.FicZone_sinf1\.jpg img,
+.Roclug\.JPG img,
+.SpringBreak_sinf1\.JPG img,
+.Brickalissimo\.JPG img {
     width: 200px;
     max-width: 300px;
     height: auto;
@@ -625,7 +634,7 @@ nav{
 
 /* -------- Página Item -------- */
 
-.item_titulo h1{
+.item_titulo h1 {
     display: flex;
     justify-content: center;
     margin: 40px 0 50px 0;
@@ -639,30 +648,41 @@ nav{
 .conteudo_item {
     display: flex;
     flex-direction: row;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
 
-.item_chapeu_img, 
+.item_chapeu_img,
 .item_hogwarts_express_img,
 .item_castelo_img,
-.descricao_item {
+.descricao_item,
+.adicionar-btn:hover,
+.Lugola_img,
+.brink_img,
+.Valbrick_img,
+.FanLego_img,
+.FicZone_img {
     flex: 1;
 }
 
 .item_chapeu_img img,
-.item_hogwarts_express_img img, 
-.item_castelo_img img{
-    width: 80%; 
-    height: auto; 
+.item_hogwarts_express_img img,
+.item_castelo_img img,
+.Lugola_img img,
+.brink_img img,
+.Valbrick_img img,
+.FanLego_img img,
+.FicZone_img img {
+    width: 80%;
+    height: auto;
     margin: 60px 0 0 60px;
 }
 
-.descricao_item li{
+.descricao_item li {
     margin: 10px 150px 20px 0;
 }
 
-.descricao_item p{
-    color:#ffff;
+.descricao_item p {
+    color: #ffff;
     margin-top: 10px;
 }
 
@@ -670,30 +690,39 @@ ul {
     list-style-type: none;
 }
 
-  select {
+select {
     margin-top: 20px;
     padding: 8px 30px 8px 10px;
-    border: 2px solid #8DAB7F; 
-    border-radius: 10px; 
-    display: block;  
-    appearance: none; 
-    background-color: #021527; 
-    color:white;
+    border: 2px solid #8DAB7F;
+    border-radius: 10px;
+    display: block;
+    appearance: none;
+    background-color: #021527;
+    color: white;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="%23666" d="M6.516 7.548c0.436-0.446 1.043-0.481 1.576 0l2.411 2.317 2.362-2.317c0.533-0.481 1.141-0.446 1.576 0 0.436 0.445 0.408 1.197 0 1.615l-3.038 2.974c-0.408 0.418-1.141 0.418-1.549 0l-3.038-2.974c-0.408-0.418-0.436-1.17 0-1.615z"/></svg>');
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 16px 16px;
     font-size: 14px;
-  }
+}
 
-  .favorito-btn {
-    background-color: transparent; 
-    border: none; 
-    color: #FFEC8B; 
-    font-size: 20px; 
-    cursor: pointer; 
+.favorito-btn {
+    background-color: transparent;
+    border: none;
+    color: #FFEC8B;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .favorito-btn:hover {
-    color: #FFEC8B; 
+    color: #FFEC8B;
+}
+
+.ordenar button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
 }

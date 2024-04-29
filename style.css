@@ -346,7 +346,9 @@ nav {
 .av_eve_1 input[type="submit"],
 .av_eve_2 input[type="submit"],
 .av_eve_3 input[type="submit"],
-.evento_btn {
+.evento_btn,
+.evento_todos_btn,
+.criar-evento_btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,7 +374,9 @@ nav {
 .av_eve_1 input[type="submit"],
 .av_eve_2 input[type="submit"],
 .av_eve_3 input[type="submit"],
-.evento_btn {
+.evento_btn,
+.evento_todos_btn,
+.criar_evento_btn{
     background-color: #021527;
     border: 1px solid;
     color: #8DAB7F;
@@ -422,7 +426,8 @@ nav {
 .form_Username input,
 .form_Password input,
 .form_Confirmar-Password input,
-.form_importancia-item select {
+.form_importancia-item select,
+.form_colecao-item select {
     flex-grow: 1;
     border: 1px solid;
     border-radius: 10px;
@@ -437,7 +442,8 @@ nav {
     padding-left: 10px;
 }
 
-.form_importancia-item select {
+.form_importancia-item select,
+.form_colecao-item select{
     margin-bottom: 20px;
 }
 
@@ -457,7 +463,9 @@ nav {
 .av_eve_1 input[type="submit"]:hover,
 .av_eve_2 input[type="submit"]:hover,
 .av_eve_3 input[type="submit"]:hover,
-.evento_btn:hover {
+.evento_btn:hover,
+.evento_todos_btn:hover,
+.criar_evento_btn:hover {
     background-color: #8DAB7F;
     color: #05192A;
 }
@@ -725,4 +733,21 @@ select {
     width: 100%;
     height: 60px;
     margin-top: 20px;
+}
+
+.botoes_colecao-eventos {
+    display: flex; 
+    justify-content: space-between; 
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+    max-width: 1000px;
+}
+.botoes_colecao-eventos button {
+    flex: 1;
+    margin: 0 20px; 
+    padding: 10px;
+    text-align: center;
+    background-color: #021527;
+    border: 1px solid #8DAB7F;
+    cursor: pointer;
 }

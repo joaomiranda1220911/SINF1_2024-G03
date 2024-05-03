@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CollectWorld - Harry Potter > Chapéu Selecionador de Harry Potter</title>
+    <title>CollectWorld - Harry Potter > FicZone </title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./imagens/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
 </head>
 <nav>
-    <a href="home_page.html">
+    <a href="home_page.php">
         <image alt="logo" src="./imagens/logo.jpg" class="logo" height="80" width="80"></image>
     </a>
 
@@ -18,7 +18,7 @@
         <image src="./imagens/location_icon.png" height="20" width="localização"></image>
 
         <div>
-            <p>Coleções em</p>
+            <p>Evento em</p>
             <h1>Portugal</h1>
         </div>
 
@@ -38,7 +38,7 @@
 
     <div class="nav-login">
 
-        <button class="btnLogin-popup" onclick="window.location.href='login_page.html';">Login</button>
+        <button class="btnLogin-popup" onclick="window.location.href='login_page.php';">Login</button>
 
     </div>
 
@@ -51,12 +51,11 @@
             <p>Todos</p>
         </button>
         <div class="conteudo_todos">
-            <a href="pag_favoritos.html">Favoritos</a>
-            <a href="pag_todos_items.html">Items</a>
-            <a href="colecao_todas.html">Coleções</a>
-            <a href="pag_evento.html">Eventos</a>
-            <a href="pag_adicionar-item.html">Adicionar Item</a>
-            <a href="pag_criar-evento.html">Criar Evento</a>
+            <a href="pag_favoritos.php">Favoritos</a>
+            <a href="colecao_todas.php">Coleções</a>
+            <a href="pag_evento.php">Eventos</a>
+            <a href="pag_adicionar-item.php">Adicionar Item</a>
+            <a href="pag_criar-evento.php">Criar Evento</a>
         </div>
     </div>
 
@@ -65,7 +64,7 @@
             <h2>Mais Populares</h2>
         </button>
         <div class="conteudo_mais-vendidos">
-            <a href="colecao_harry_potter.html">Harry Potter</a>
+            <a href="colecao_harry_potter.php">Harry Potter</a>
         </div>
     </div>
 
@@ -74,8 +73,8 @@
             <h2>Coleções</h2>
         </button>
         <div class="conteudo_colecoes">
-            <a href="colecao_harry_potter.html">Harry Potter</a>
-            <a href="colecao_todas.html">Todas</a>
+            <a href="colecao_harry_potter.php">Harry Potter</a>
+            <a href="colecao_todas.php">Todas</a>
         </div>
     </div>
 
@@ -84,21 +83,21 @@
             <h2>Eventos</h2>
         </button>
         <div class="conteudo_eventos">
-            <a href="pag_evento.html">Eventos</a>
-            <a href="pag_criar-evento.html">Criar Evento</a>
-            <a href="pag_avaliar-evento.html">Avaliar Eventos</a>
+            <a href="pag_evento.php">Eventos</a>
+            <a href="pag_criar-evento.php">Criar Evento</a>
+            <a href="pag_avaliar-evento.php">Avaliar Eventos</a>
         </div>
     </div>
 
     <div class="menu-adicionar-item-coleção">
         <button>
-            <h2><a href="pag_adicionar-item.html"> Adicionar Item </a></h2>
+            <h2><a href="pag_adicionar-item.php"> Adicionar Item </a></h2>
         </button>
     </div>
 
     <div class="menu-criar-coleção">
         <button>
-            <h2><a href="pag_criar-colecao.html"> Criar Coleção </a></h2>
+            <h2><a href="pag_criar-colecao.php"> Criar Coleção </a></h2>
         </button>
     </div>
 
@@ -108,43 +107,42 @@
 
     <div class="item_painel">
         <div class="item_titulo">
-            <h1>Chapéu Selecionador de Harry Potter</h1>
+            <h1>FicZone </h1>
         </div>
         <div class="conteudo_item">
-            <div class="item_chapeu_img">
-                <img src="./imagens/chapeu.png" alt="Chapéu Selecionador de Harry Potter">
+            <div class="FicZone_img">
+                <img src="./imagens/FicZone_sinf1.jpg" alt="FicZone">
             </div>
             <div class="descricao_item">
                 <button class="favorito-btn">&#9734; Adicionar aos Favoritos</button>
                 <ul>
                     <li>
-                        <h2>Coleção:</h2>
-                        <p>Harry Potter</p>
+                        <h2>Evento:</h2>
+                        <p>FicZone</p>
                     </li>
                     <li>
                         <h2>Descrição:</h2>
-                        <p>Chapéu Selecionador de Harry Potter com 561 peças
-                            - representação do primeiro set LEGO® Harry Potter™ com uma peça sonora.
-                            Ao inclinar o chapéu ou colocá-lo na cabeça, é ativada a voz do Chapéu
-                            Seletor e descobre a casa que selecionada. Além disso, de tempos em tempos,
-                            pode ouvir a Música do Chapéu Seletor.</p>
+                        <p>A Convenção FicZone de Quadrinhos, Fantasia e Animação é uma inovação tecnológica e muito
+                            mais esperam por você! </p>
                     </li>
+
                     <li>
-                        <h2>Preço:</h2>
-                        <p>99,99€</p>
+                        <h2>Data:</h2>
+                        <p>6 ABRIL 2024 - 7 ABRIL 2024</p>
                     </li>
-                    <li>
-                        <h2>Data de Compra:</h2>
-                        <p>05/04/2004</p>
-                    </li>
-                    <li>
-                        <h2>Peso:</h2>
-                        <p>N/A</p>
-                    </li>
+
                 </ul>
             </div>
         </div>
     </div>
+
+    <div class="item-actions">
+        <a href="pag_criar-evento.php">
+            <button class="adicionar-btn">Adicionar</button> </a>
+            <button class="editar-btn">Editar</button>
+            <button class="eliminar-btn">Eliminar</button>
+    </div>
+
     </div>
     <script>
         function toggleFavorito() {

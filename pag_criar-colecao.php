@@ -12,8 +12,46 @@
 
 <body>
 
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    // Dados de conexão ao banco de dados
+    $servername = "localhost";
+    $username = "root";
+    $password = "";  
+    $dbname = "criarColecao"; 
+
+    // Cria conexão
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Verifica conexão
+    if ($conn->connect_error) {
+        die("Conexão falhou: " . $conn->connect_error);
+    }
+
+    // Recebe os dados do formulário
+    $nomeColecao = $_POST['nome_colecao'];
+    $temaColecao = $_POST['tema_colecao'];
+
+    // Prepara a query SQL para inserção dos dados
+    $stmt = $conn->prepare("INSERT INTO colecoes (nome_colecao, tema_colecao) VALUES (?, ?)");
+    $stmt->bind_param("ss", $nomeColecao, $temaColecao);
+
+    // Executa a query
+    if ($stmt->execute()) {
+        echo "<p>Nova coleção criada com sucesso.</p>";
+    } else {
+        echo "<p>Erro: " . $stmt->error . "</p>";
+    }
+
+    // Fecha statement e conexão
+    $stmt->close();
+    $conn->close();
+}
+?>
+
     <nav>
-        <a href="home_page.html">
+        <a href="home_page.php">
             <image alt="logo" src="./imagens/logo.jpg" class="logo" height="80" width="80"></image>
         </a>
 
@@ -41,7 +79,7 @@
 
         <div class="nav-login">
 
-            <button class="btnLogin-popup" onclick="window.location.href='login_page.html';">Login</button>
+            <button class="btnLogin-popup" onclick="window.location.href='login_page.php';">Login</button>
 
         </div>
 
@@ -54,12 +92,12 @@
                 <p>Todos</p>
             </button>
             <div class="conteudo_todos">
-                <a href="pag_favoritos.html">Favoritos</a>
-                <a href="pag_todos_items.html">Items</a>
-                <a href="colecao_todas.html">Coleções</a>
-                <a href="pag_evento.html">Eventos</a>
-                <a href="pag_adicionar-item.html">Adicionar Item</a>
-                <a href="pag_criar-evento.html">Criar Evento</a>
+                <a href="pag_favoritos.php">Favoritos</a>
+                <a href="pag_todos_items.php">Items</a>
+                <a href="colecao_todas.php">Coleções</a>
+                <a href="pag_evento.php">Eventos</a>
+                <a href="pag_adicionar-item.php">Adicionar Item</a>
+                <a href="pag_criar-evento.php">Criar Evento</a>
             </div>
         </div>
 
@@ -68,7 +106,7 @@
                 <h2>Mais Populares</h2>
             </button>
             <div class="conteudo_mais-vendidos">
-                <a href="colecao_harry_potter.html">Harry Potter</a>
+                <a href="colecao_harry_potter.php">Harry Potter</a>
             </div>
         </div>
 
@@ -77,8 +115,8 @@
                 <h2>Coleções</h2>
             </button>
             <div class="conteudo_colecoes">
-                <a href="colecao_harry_potter.html">Harry Potter</a>
-                <a href="colecao_todas.html">Todas</a>
+                <a href="colecao_harry_potter.php">Harry Potter</a>
+                <a href="colecao_todas.php">Todas</a>
             </div>
         </div>
 
@@ -87,21 +125,21 @@
                 <h2>Eventos</h2>
             </button>
             <div class="conteudo_eventos">
-                <a href="pag_evento.html">Eventos</a>
-                <a href="pag_criar-evento.html">Criar Evento</a>
-                <a href="pag_avaliar-evento.html">Avaliar Eventos</a>
+                <a href="pag_evento.php">Eventos</a>
+                <a href="pag_criar-evento.php">Criar Evento</a>
+                <a href="pag_avaliar-evento.php">Avaliar Eventos</a>
             </div>
         </div>
 
         <div class="menu-adicionar-item-coleção">
             <button>
-                <h2><a href="pag_adicionar-item.html"> Adicionar Item </a></h2>
+                <h2><a href="pag_adicionar-item.php"> Adicionar Item </a></h2>
             </button>
         </div>
 
         <div class="menu-criar-coleção">
             <button>
-                <h2><a href="pag_criar-colecao.html"> Criar Coleção </a></h2>
+                <h2><a href="pag_criar-colecao.php"> Criar Coleção </a></h2>
             </button>
         </div>
 
@@ -113,7 +151,7 @@
             <h1>CRIAR COLEÇÃO</h1>
         </div>
 
-        <form action="processar_dados.php" method="post">
+        <form action="" method="post">
             <div class="form_nome-colecao">
                 <label for="nome_colecao">Nome da coleção:</label>
                 <input type="text" id="nome_colecao" name="nome_colecao" required>

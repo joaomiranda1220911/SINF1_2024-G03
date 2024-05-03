@@ -13,7 +13,7 @@
 <body>
 
     <nav>
-        <a href="home_page.html">
+        <a href="home_page.php">
             <image alt="logo" src="./imagens/logo.jpg" class="logo" height="80" width="80"></image>
         </a>
 
@@ -41,7 +41,7 @@
 
         <div class="nav-login">
 
-            <button class="btnLogin-popup" onclick="window.location.href='login_page.html';">Login</button>
+            <button class="btnLogin-popup" onclick="window.location.href='login_page.php';">Login</button>
 
         </div>
 
@@ -54,12 +54,12 @@
                 <p>Todos</p>
             </button>
             <div class="conteudo_todos">
-                <a href="pag_favoritos.html">Favoritos</a>
-                <a href="pag_todos_items.html">Items</a>
-                <a href="colecao_todas.html">Coleções</a>
-                <a href="pag_evento.html">Eventos</a>
-                <a href="pag_adicionar-item.html">Adicionar Item</a>
-                <a href="pag_criar-evento.html">Criar Evento</a>
+                <a href="pag_favoritos.php">Favoritos</a>
+                <a href="pag_todos_items.php">Items</a>
+                <a href="colecao_todas.php">Coleções</a>
+                <a href="pag_evento.php">Eventos</a>
+                <a href="pag_adicionar-item.php">Adicionar Item</a>
+                <a href="pag_criar-evento.php">Criar Evento</a>
             </div>
         </div>
 
@@ -68,7 +68,7 @@
                 <h2>Mais Populares</h2>
             </button>
             <div class="conteudo_mais-vendidos">
-                <a href="colecao_harry_potter.html">Harry Potter</a>
+                <a href="colecao_harry_potter.php">Harry Potter</a>
             </div>
         </div>
 
@@ -77,8 +77,8 @@
                 <h2>Coleções</h2>
             </button>
             <div class="conteudo_colecoes">
-                <a href="colecao_harry_potter.html">Harry Potter</a>
-                <a href="colecao_todas.html">Todas</a>
+                <a href="colecao_harry_potter.php">Harry Potter</a>
+                <a href="colecao_todas.php">Todas</a>
             </div>
         </div>
 
@@ -87,21 +87,21 @@
                 <h2>Eventos</h2>
             </button>
             <div class="conteudo_eventos">
-                <a href="pag_evento.html">Eventos</a>
-                <a href="pag_criar-evento.html">Criar Evento</a>
-                <a href="pag_avaliar-evento.html">Avaliar Eventos</a>
+                <a href="pag_evento.php">Eventos</a>
+                <a href="pag_criar-evento.php">Criar Evento</a>
+                <a href="pag_avaliar-evento.php">Avaliar Eventos</a>
             </div>
         </div>
 
         <div class="menu-adicionar-item-coleção">
             <button>
-                <h2><a href="pag_adicionar-item.html"> Adicionar Item </a></h2>
+                <h2><a href="pag_adicionar-item.php"> Adicionar Item </a></h2>
             </button>
         </div>
 
         <div class="menu-criar-coleção">
             <button>
-                <h2><a href="pag_criar-colecao.html"> Criar Coleção </a></h2>
+                <h2><a href="pag_criar-colecao.php"> Criar Coleção </a></h2>
             </button>
         </div>
 
@@ -110,7 +110,7 @@
     <div class="display_prod">
 
         <div class="hp_header_img">
-            <a href="colecao_harry_potter.html">
+            <a href="colecao_harry_potter.php">
                 <img src="./imagens/hp.jpg" class="header-img" width="500px" height="500px" alt="">
             </a>
         </div>

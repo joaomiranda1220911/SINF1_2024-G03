@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CollectWorld - Todos os Items</title>
+    <title>CollectWorld - Todas as coleções</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./imagens/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
-
 </head>
+
 <nav>
-    <a href="home_page.html">
+    <a href="home_page.php">
         <image alt="logo" src="./imagens/logo.jpg" class="logo" height="80" width="80"></image>
     </a>
 
@@ -22,6 +22,9 @@
             <p>Coleções em</p>
             <h1>Portugal</h1>
         </div>
+
+
+
 
     </div>
 
@@ -39,7 +42,7 @@
 
     <div class="nav-login">
 
-        <button class="btnLogin-popup" onclick="window.location.href='login_page.html';">Login</button>
+        <button class="btnLogin-popup" onclick="window.location.href='login_page.php';">Login</button>
 
     </div>
 
@@ -52,12 +55,11 @@
             <p>Todos</p>
         </button>
         <div class="conteudo_todos">
-            <a href="pag_favoritos.html">Favoritos</a>
-            <a href="pag_todos_items.html">Items</a>
-            <a href="colecao_todas.html">Coleções</a>
-            <a href="pag_evento.html">Eventos</a>
-            <a href="pag_adicionar-item.html">Adicionar Item</a>
-            <a href="pag_criar-evento.html">Criar Evento</a>
+            <a href="pag_favoritos.php">Favoritos</a>
+            <a href="colecao_todas.php">Coleções</a>
+            <a href="pag_evento.php">Eventos</a>
+            <a href="pag_adicionar-item.php">Adicionar Item</a>
+            <a href="pag_criar-evento.php">Criar Evento</a>
         </div>
     </div>
 
@@ -66,7 +68,7 @@
             <h2>Mais Populares</h2>
         </button>
         <div class="conteudo_mais-vendidos">
-            <a href="colecao_harry_potter.html">Harry Potter</a>
+            <a href="colecao_harry_potter.php">Harry Potter</a>
         </div>
     </div>
 
@@ -75,8 +77,8 @@
             <h2>Coleções</h2>
         </button>
         <div class="conteudo_colecoes">
-            <a href="colecao_harry_potter.html">Harry Potter</a>
-            <a href="colecao_todas.html">Todas</a>
+            <a href="colecao_harry_potter.php">Harry Potter</a>
+            <a href="colecao_todas.php">Todas</a>
         </div>
     </div>
 
@@ -85,30 +87,29 @@
             <h2>Eventos</h2>
         </button>
         <div class="conteudo_eventos">
-            <a href="pag_evento.html">Eventos</a>
-            <a href="pag_criar-evento.html">Criar Evento</a>
-            <a href="pag_avaliar-evento.html">Avaliar Eventos</a>
+            <a href="pag_evento.php">Eventos</a>
+            <a href="pag_criar-evento.php">Criar Evento</a>
+            <a href="pag_avaliar-evento.php">Avaliar Eventos</a>
         </div>
     </div>
 
     <div class="menu-adicionar-item-coleção">
         <button>
-            <h2><a href="pag_adicionar-item.html"> Adicionar Item </a></h2>
+            <h2><a href="pag_adicionar-item.php"> Adicionar Item </a></h2>
         </button>
     </div>
 
     <div class="menu-criar-coleção">
         <button>
-            <h2><a href="pag_criar-colecao.html"> Criar Coleção </a></h2>
+            <h2><a href="pag_criar-colecao.php"> Criar Coleção </a></h2>
         </button>
     </div>
 
 </div>
 
 <body>
-
     <div class="container">
-        <h1>Todos os Items</h1>
+        <h1>As Nossas Coleções</h1>
 
         <div>
             <label for="ordenar">
@@ -125,46 +126,23 @@
             </select>
         </div>
 
-        <a href="Chapeu_HP.html">
-            <div class="item_todos_1">
-
-                <div class="chapeu_img">
-                    <img src="./imagens/chapeu.png" class="chapeu_img" width="300px" height="500px" alt="chapeu_img">
+        <a href="colecao_harry_potter.php">
+            <div class="colecao">
+                <h2>Harry Potter</h2>
+                <div class="hp_img">
+                    <img src="./imagens/hp.jpg" class="hp_img" width="300px" height="300px" alt="hp_img">
                 </div>
-                <h2>Chapéu Selecionador de Harry Potter</h2>
+                <p>Entre na magia do mundo de Harry Potter com esta incrível coleção de conjuntos LEGO!
+                    Desde o icónico castelo de Hogwarts até ao misterioso Beco Diagonal, cada conjunto permite
+                    aos fãs recriarem os momentos mais emocionantes dos livros e filmes.
+                    Com detalhes autênticos e minifiguras encantadoras, estes conjuntos oferecem horas de
+                    diversão criativa para jovens e adultos. Embarque numa aventura mágica e descubra a magia
+                    da LEGO Harry Potter!
+                </p>
             </div>
         </a>
-
-        <a href="HogwartsExpress_HP.html">
-            <div class="item_todos_2">
-
-                <div class="hogwarts_express_img">
-                    <img src="./imagens/hogwarts_express.png" class="hogwarts_express_img" width="300px" height="500px"
-                        alt="hogwarts_express_img">
-                </div>
-                <h2>Hogwarts Express</h2>
-            </div>
-        </a>
-
-        <a href="Castelo_HP.html">
-            <div class="item_todos_3">
-                
-                <div class="castelo_img">
-                    <img src="./imagens/castelo.jpg" class="castelo_img" width="300px" height="500px" alt="castelo_img">
-                </div>
-                <h2>Castelo de Hogwarts</h2>
-            </div>
-        </a>
-
-        <div class="item-actions">
-            <a href="pag_adicionar-item.html">
-                <button class="adicionar-btn">Adicionar</button> </a>
-            <button class="editar-btn">Editar</button>
-            <button class="eliminar-btn">Eliminar</button>
-        </div>
-
-
     </div>
+
 
 </body>
 

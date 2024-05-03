@@ -19,7 +19,7 @@ if ($user = $result->fetch_assoc()) {
     if ($password === $user['Password']) {
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
-        header("Location: home_page.html");
+        header("Location: home_page.php");
         exit();
     } else {
         echo "Password incorreta!";

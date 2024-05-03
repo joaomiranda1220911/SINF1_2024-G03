@@ -13,6 +13,12 @@
 <body>
 
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Dados de conexão ao banco de dados
@@ -30,11 +36,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Recebe os dados do formulário
-    $nomeColecao = $_POST['nome_colecao'];
-    $temaColecao = $_POST['tema_colecao'];
+    $nomeColecao = $_POST['nomeColecao'];
+    $temaColecao = $_POST['temaColecao'];
 
     // Prepara a query SQL para inserção dos dados
-    $stmt = $conn->prepare("INSERT INTO colecoes (nome_colecao, tema_colecao) VALUES (?, ?)");
+    $stmt = $conn->prepare("INSERT INTO colecoes (nomeColecao, temaColecao) VALUES (?, ?)");
     $stmt->bind_param("ss", $nomeColecao, $temaColecao);
 
     // Executa a query
@@ -64,7 +70,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
         </div>
-
 
         <div class="nav-pesquisar">
             <input type="text" class="nav-pesquisar-input" placeholder="O que está à procura?">
@@ -154,12 +159,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="" method="post">
             <div class="form_nome-colecao">
                 <label for="nome_colecao">Nome da coleção:</label>
-                <input type="text" id="nome_colecao" name="nome_colecao" required>
+                <input type="text" id="nomeColecao" name="nomeColecao" required>
             </div>
 
             <div class="form_tema-colecao">
                 <label for="tema_colecao">Tema:</label>
-                <input type="text" id="tema_colecao" name="tema_colecao" required>
+                <input type="text" id="temaColecao" name="temaColecao" required>
             </div>
 
             <div class="criar-colecao_btn">

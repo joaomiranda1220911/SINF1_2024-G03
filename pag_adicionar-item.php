@@ -1,6 +1,42 @@
+<?php
+session_start();
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "adicionarItem";
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Conexão falhada: " . $conn->connect_error);
+    }
+
+    $nome_item = $conn->real_escape_string($_POST['nome_item']);
+    $colecao_item = $conn->real_escape_string($_POST['colecao_item']);
+    $descricao_item = $conn->real_escape_string($_POST['descricao_item']);
+    $preco_item = $conn->real_escape_string($_POST['preco_item']);
+    $local_item = $conn->real_escape_string($_POST['local_item']);
+    $importancia_item = $conn->real_escape_string($_POST['importancia_item']);
+    $data_item = $conn->real_escape_string($_POST['data_item']);
+
+    $sql = $conn->prepare("INSERT INTO itens (nome_item, colecao_item, descricao_item, preco_item, local_item, importancia_item, data_item) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $sql->bind_param("sssssis", $nome_item, $colecao_item, $descricao_item, $preco_item, $local_item, $importancia_item, $data_item);
+
+    if ($sql->execute()) {
+        echo "Dados guardados com sucesso!";
+    } else {
+        echo "Erro: " . $sql->error;
+    }
+    $sql->close();
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +45,6 @@
     <link rel="icon" href="./imagens/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
 
     <nav>
@@ -112,7 +147,7 @@
             <h1>ADICIONAR ITEM</h1>
         </div>
 
-        <form action="processar_dados.php" method="post">
+        <form action="pag_adicionar-item.php" method="post">
 
             <div class="form_nome-item">
                 <label for="nome_item">Nome do Item: </label>
@@ -143,20 +178,16 @@
             </div>
 
             <div class="form_importancia-item">
+                <label for="importancia_item">Importância:</label><br>
+                <select id="importancia_item" name="importancia_item">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
 
-                <form action="/submit" method="post" onsubmit="mostrarConfirmacao()">
-                    <label for="importancia_item">Importância:</label><br>
-                    <select id="importancia_item" name="importancia_item">
-                        <option value=""></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-
-                    </select><br><br>
-
-                </form>
+                </select><br><br>
 
             </div>
 
@@ -175,8 +206,9 @@
             </div>
 
         </form>
-    </div>
 
+        </form>
+    </div>
 </body>
 
 </html>

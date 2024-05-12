@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Prepara a query SQL para inserção dos dados
     $stmt = $conn->prepare("INSERT INTO User (Username, Password) VALUES (?, ?)");
-    $stmt->bind_param("si", $Username, $Password );
+    $stmt->bind_param("ss", $Username, $Password );
 
 // Executa a query
     if ($stmt->execute()) {

@@ -1,3 +1,58 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+// Dados de conexão ao banco de dados
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "Database";
+
+// Cria conexão
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verifica conexão
+    if ($conn->connect_error) {
+        die("Conexão falhou: " . $conn->connect_error);
+    }
+// Verifica a existência do email na base de dados
+    if (isset($_POST['Username']) || isset($_POST['Password'])) {
+        if(strlen($_POST['Username']) == 0) {
+            echo "Preencha o seu Username";
+        } else if(strlen($_POST['Password']) == 0) {
+            echo "Preencha a Password";
+        } else {
+
+            $Username = $conn->real_escape_string($_POST['Username']);
+            $Password = $conn->real_escape_string($_POST['Password']);
+        }
+    }
+
+// Recebe os dados do formulário
+    $Username = $_POST['Username'];
+    $Password = $_POST['Password'];
+
+// Prepara a query SQL para inserção dos dados
+    $stmt = $conn->prepare("INSERT INTO User (Username, Password) VALUES (?, ?)");
+    $stmt->bind_param("ss", $Username, $Password );
+
+// Executa a query
+    if ($stmt->execute()) {
+        echo "<p>Login efetuado com sucesso.</p>";
+        header("Location: home_page.php");
+    } else {
+        echo "<p>Erro: " . $stmt->error . "</p>";
+    }
+
+// Fecha statement e conexão
+    $stmt->close();
+    $conn->close();
+}
+?>
 <!DOCTYPE html>
 <html lang="pt">
 

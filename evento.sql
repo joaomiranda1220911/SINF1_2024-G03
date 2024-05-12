@@ -21,7 +21,8 @@ CREATE TABLE Evento (
   `nomeColecao` varchar(25) NOT NULL,
   `precoBilhete` float NOT NULL,
   `localCompra` varchar(25) NOT NULL,
-  `localEvento` varchar(25) NOT NULL
+  `localEvento` varchar(25) NOT NULL,
+  `classificacao` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 ALTER TABLE Evento
@@ -31,9 +32,9 @@ ALTER TABLE Evento
     ADD CONSTRAINT FK_NomeColecaoEvento
         FOREIGN KEY (nomeColecao) REFERENCES Colecao(nomeColecao);
 
-INSERT INTO Evento (`nomeEvento`, `nomeColecao`, `precoBilhete`, `localCompra`, `localEvento`) VALUES
-('EventoTeste', 'HarryPotter', 12, 'LocalCompraTeste', 'LocalEventoTeste'),
-('EventoTeste2', 'teste', 12, 'LocalCompraTeste', 'LocalEventoTeste');
+INSERT INTO Evento (`nomeEvento`, `nomeColecao`, `precoBilhete`, `localCompra`, `localEvento`, `classificacao`) VALUES
+('EventoTeste', 'HarryPotter', 12, 'LocalCompraTeste', 'LocalEventoTeste', 1),
+('EventoTeste2', 'teste', 12, 'LocalCompraTeste', 'LocalEventoTeste', 5);
 
 COMMIT;
 

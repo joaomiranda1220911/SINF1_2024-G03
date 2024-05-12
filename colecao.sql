@@ -19,7 +19,8 @@ SET time_zone = "+00:00";
 CREATE TABLE Colecao (
     `nomeColecao` varchar(25) NOT NULL,
     `temaColecao` varchar(25) NOT NULL,
-    `username` varchar(25) NOT NULL
+    `username` varchar(25) NOT NULL,
+    `favoritoStatus` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 ALTER TABLE Colecao
@@ -29,9 +30,9 @@ ALTER TABLE Colecao
     ADD CONSTRAINT FK_NomeColecaoUser
         FOREIGN KEY (username) REFERENCES User(username);
 
-INSERT INTO Colecao (`nomeColecao`, `temaColecao`, `username`) VALUES
-('teste', 'teste', 'user1'),
-('HarryPotter', 'teste2', 'user2');
+INSERT INTO Colecao (`nomeColecao`, `temaColecao`, `username`, `favoritoStatus`) VALUES
+('teste', 'teste', 'user1', 0),
+('HarryPotter', 'teste2', 'user2', 1);
 
 COMMIT;
 

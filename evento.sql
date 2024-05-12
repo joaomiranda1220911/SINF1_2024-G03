@@ -33,7 +33,7 @@ ALTER TABLE Evento
 
 INSERT INTO Evento (`nomeEvento`, `nomeColecao`, `precoBilhete`, `localCompra`, `localEvento`) VALUES
 ('EventoTeste', 'HarryPotter', 12, 'LocalCompraTeste', 'LocalEventoTeste'),
-('EventoTeste', 'teste', 12, 'LocalCompraTeste', 'LocalEventoTeste');
+('EventoTeste2', 'teste', 12, 'LocalCompraTeste', 'LocalEventoTeste');
 
 COMMIT;
 

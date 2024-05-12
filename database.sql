@@ -1,3 +1,5 @@
+CREATE DATABASE `Database`;
+USE `Database`;
 
 -- database name: Database
 

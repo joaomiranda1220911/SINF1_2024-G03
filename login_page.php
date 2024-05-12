@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Executa a query
     if ($stmt->execute()) {
         echo "<p>Login efetuado com sucesso.</p>";
-        header("Location: home_page.php");
+
     } else {
         echo "<p>Erro: " . $stmt->error . "</p>";
     }

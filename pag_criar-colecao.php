@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CollectWorld - Criar Coleção</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./imagens/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
-</head>
-
-<body>
-
 <?php>
 
 ini_set('display_errors', 1);
@@ -24,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Dados de conexão ao banco de dados
     $servername = "localhost";
     $username = "root";
-    $password = "";  
+    $password = "";
     $dbname = "Database";
 
     // Cria conexão
@@ -55,6 +41,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollectWorld - Criar Coleção</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
 
     <nav>
         <a href="home_page.php">

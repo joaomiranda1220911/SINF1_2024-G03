@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CollectWorld - Login and SignUP</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./imagens/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
-
-</head>
-<body>
 <?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -52,6 +40,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollectWorld - Login and SignUP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
     <nav>
         <a href="home_page.php">
             <image alt="logo" src="./imagens/logo.jpg" class="logo" height="80" width="80"></image> 

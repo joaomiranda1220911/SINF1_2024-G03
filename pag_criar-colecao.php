@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername = "localhost";
     $username = "root";
     $password = "";  
-    $dbname = "criarColecao"; 
+    $dbname = "Database";
 
     // Cria conexão
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $temaColecao = $_POST['temaColecao'];
 
     // Prepara a query SQL para inserção dos dados
-    $stmt = $conn->prepare("INSERT INTO colecoes (nomeColecao, temaColecao) VALUES (?, ?)");
+    $stmt = $conn->prepare("INSERT INTO Colecao (nomeColecao, temaColecao) VALUES (?, ?)");
     $stmt->bind_param("ss", $nomeColecao, $temaColecao);
 
     // Executa a query

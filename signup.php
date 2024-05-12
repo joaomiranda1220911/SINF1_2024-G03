@@ -15,7 +15,7 @@ if (session_status() == PHP_SESSION_NONE) {
     }
 
     // Database connection
-    $conn = new mysqli('localhost', 'root', '', 'login_signup');
+    $conn = new mysqli('localhost', 'root', '', 'Database');
     if ($conn->connect_error) {
         die('Connection Failed : ' . $conn->connect_error);
     } else {

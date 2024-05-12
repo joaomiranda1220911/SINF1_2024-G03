@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "adicionarItem";
+    $dbname = "Database";
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     if ($conn->connect_error) {
@@ -15,14 +15,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $nome_item = $conn->real_escape_string($_POST['nome_item']);
-    $colecao_item = $conn->real_escape_string($_POST['colecao_item']);
+    $colecao_item = $conn->real_escape_string($_POST['nomeColecao']);
     $descricao_item = $conn->real_escape_string($_POST['descricao_item']);
     $preco_item = $conn->real_escape_string($_POST['preco_item']);
     $local_item = $conn->real_escape_string($_POST['local_item']);
     $importancia_item = $conn->real_escape_string($_POST['importancia_item']);
     $data_item = $conn->real_escape_string($_POST['data_item']);
 
-    $sql = $conn->prepare("INSERT INTO itens (nome_item, colecao_item, descricao_item, preco_item, local_item, importancia_item, data_item) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $sql = $conn->prepare("INSERT INTO Items (nome_item, nomeColecao, descricao_item, preco_item, local_item, importancia_item, data_item) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $sql->bind_param("sssssis", $nome_item, $colecao_item, $descricao_item, $preco_item, $local_item, $importancia_item, $data_item);
 
     if ($sql->execute()) {

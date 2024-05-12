@@ -13,6 +13,7 @@
 
 <body>
 
+
     <nav>
         <a href="home_page.php">
             <image alt="logo" src="./imagens/logo.jpg" class="logo" height="80" width="80"></image>

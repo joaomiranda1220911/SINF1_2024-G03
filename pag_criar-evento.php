@@ -11,7 +11,51 @@
 </head>
 
 <body>
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+// Dados de conexão ao banco de dados
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "Database";
+
+// Cria conexão
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verifica conexão
+if ($conn->connect_error) {
+die("Conexão falhou: " . $conn->connect_error);
+}
+
+// Recebe os dados do formulário
+$nomeEvento = $_POST['nomeEvento'];
+$nomeColecao = $_POST['nomeColecao'];
+$precoBilhete = $_POST['precoBilhete'];
+$localCompra = $_POST['localCompra'];
+$localEvento = $_POST['localEvento'];
+
+// Prepara a query SQL para inserção dos dados
+$stmt = $conn->prepare("INSERT INTO Evento (nomeEvento, nomeColecao, precoBilhete, localCompra, localEvento ) VALUES (?, ?, ?, ?, ?)");
+$stmt->bind_param("ssdss", $nomeEvento, $nomeColecao, $precoBilhete, $localCompra, $localEvento   );
+
+// Executa a query
+if ($stmt->execute()) {
+echo "<p>Novo evento criado com sucesso.</p>";
+} else {
+echo "<p>Erro: " . $stmt->error . "</p>";
+}
+
+// Fecha statement e conexão
+$stmt->close();
+$conn->close();
+}
+?>
     <nav>
         <a href="home_page.php">
             <image alt="logo" src="./imagens/logo.jpg" class="logo" height="80" width="80"></image>
@@ -116,27 +160,27 @@
         <form action="processar_dados.php" method="post">
             <div class="form_nome-evento">
                 <label for="nome_evento">Nome do Evento:</label>
-                <input type="text" id="nome_evento" name="nome_evento" required>
+                <input type="text" id="nomeEvento" name="nomeEvento" required>
             </div>
 
             <div class="form_tema-evento">
                 <label for="tema_evento">Tema:</label>
-                <input type="text" id="tema_evento" name="tema_evento" required>
+                <input type="text" id="nomeColecao" name="nomeColecao" required>
             </div>
 
             <div class="form_preco-bilhete">
                 <label for="preco_bilhete">Preço do Bilhete:</label>
-                <input type="text" id="preco_bilhete" name="preco_bilhete" required>
+                <input type="text" id="precoBilhete" name="precoBilhete" required>
             </div>
 
             <div class="form_local-compra-bilhetes">
                 <label for="local_compra_bilhetes">Local de Compra:</label>
-                <input type="text" id="local_compra_bilhetes" name="local_compra_bilhetes" required>
+                <input type="text" id="localCompra" name="localCompra" required>
             </div>
 
             <div class="form_local-evento">
                 <label for="local_evento">Local Evento:</label>
-                <input type="text" id="local_evento" name="local_evento" required>
+                <input type="text" id="localEvento" name="localEvento" required>
             </div>
 
             <div class="criar-evento_btn">

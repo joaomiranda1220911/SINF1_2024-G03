@@ -17,6 +17,50 @@
 </head>
 
 <body>
+
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+// Dados de conexão ao banco de dados
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "Database";
+
+// Cria conexão
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verifica conexão
+    if ($conn->connect_error) {
+        die("Conexão falhou: " . $conn->connect_error);
+    }
+
+// Recebe os dados do formulário
+    $nomeEvento = $_POST['nomeEvento'];
+    $classificacao = $_POST['classificacao'];
+
+// Prepara a query SQL para inserção dos dados
+    $stmt = $conn->prepare("INSERT INTO Evento (nomeEvento, classificacao) VALUES (?, ?)");
+    $stmt->bind_param("si", $nomeEvento, $classificacao );
+
+// Executa a query
+    if ($stmt->execute()) {
+        echo "<p>Avaliação enviada.</p>";
+    } else {
+        echo "<p>Erro: " . $stmt->error . "</p>";
+    }
+
+// Fecha statement e conexão
+    $stmt->close();
+    $conn->close();
+}
+?>
+
     <nav>
         <a href="home_page.php">
             <image alt="logo" src="./imagens/logo.jpg" class="logo" height="80" width="80"></image>

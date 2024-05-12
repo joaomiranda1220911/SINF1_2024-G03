@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 11, 2024 at 06:27 PM
+-- Generation Time: May 01, 2024 at 03:05 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -16,22 +16,17 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
-CREATE TABLE Colecao (
-    `nomeColecao` varchar(25) NOT NULL,
-    `temaColecao` varchar(25) NOT NULL,
-    `username` varchar(25) NOT NULL
+CREATE TABLE User (
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-ALTER TABLE Colecao
-    ADD PRIMARY KEY (`nomeColecao`);
+ALTER TABLE User
+    ADD PRIMARY KEY (`username`);
 
-ALTER TABLE Colecao
-    ADD CONSTRAINT FK_NomeColecaoUser
-        FOREIGN KEY (username) REFERENCES User(username);
-
-INSERT INTO Colecao (`nomeColecao`, `temaColecao`, `username`) VALUES
-('teste', 'teste', 'user1'),
-('HarryPotter', 'teste2', 'user2');
+INSERT INTO User (`username`, `password`) VALUES
+('user1', '$2y$10$Pb4S1fgVvogWmZlVAUzvY.VJAdDIvqaFQ4veBj3bxFh1NqzMXcPg.'),
+('user2', '!Password123');
 
 COMMIT;
 
